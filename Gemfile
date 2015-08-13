@@ -6,8 +6,20 @@ gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+#for Authentification
+gem 'devise'
+
+#for image management
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+gem 'aws-sdk'
+gem 'aws-s3'
+
 group :development do
 	gem 'better_errors'
+end
+
+group :development, :test d0
+	gem 'dotenv-rails'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

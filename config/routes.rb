@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :blog_entries
+  resources :portfolio_pieces
   get 'front_page/show'
   root "front_page#show"
 
