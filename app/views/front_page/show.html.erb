@@ -23,16 +23,15 @@
 
 		<div class="home__work">
 			<div class="row">
-				THE THUMBNAIL
 				<div class="col-half home__image-container">
-					<div class="home__image" style="background: url(); background-size: cover; background-repeat: no-repeat; background-position: center;">
+					<div class="home__image">
 					</div>	
-					<div class="home--image-overlay" style="background-color:blue">Overlay</div>
+					<div class="home--image-overlay"><%= link_to "The Portfolio", portfolio_pieces_path %></div>
 				</div>
 				<div class="col-half home__content">
 					<div class="contain-content--right">
-						<h4>THE TITLE</h4>
-						<p>THE EXERPT</p>
+						<h4><%= @portfolio_piece.title%></h4>
+						<p><%= @portfolio_piece.excerpt%></p>
 					</div>
 				</div>
 			</div>
@@ -42,7 +41,6 @@
 	<!-- // Loop -->
 		<div class="home__blog">
 			<div class="row">
-			THE THUMBNAIL
 			<div class="col-half home__content">
 				<div class="contain-content--left">
 					<h4>THE TITLE</h4>
@@ -50,9 +48,9 @@
 				</div>
 			</div>
 			<div class="col-half home__image-container">
-				<div class="home__image" style="background: url(<?php echo $src[0] ?>); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				<div class="home__image">
 				</div>	
-				<div class="home--image-overlay" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/img/subtle-dots.png')"></div>
+				<div class="home--image-overlay"><%= link_to "Blog", blog_entries_path%></div>
 			</div>
 			</div>
 		</div>

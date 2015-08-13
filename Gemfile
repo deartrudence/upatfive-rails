@@ -11,14 +11,14 @@ gem 'devise'
 
 #for image management
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
-gem 'aws-sdk'
+gem 'aws-sdk-v1'
 gem 'aws-s3'
 
 group :development do
 	gem 'better_errors'
 end
 
-group :development, :test d0
+group :development, :test do
 	gem 'dotenv-rails'
 end
 # Use SCSS for stylesheets

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :portfolio_images
   resources :blog_entries
   resources :portfolio_pieces
   get 'front_page/show'

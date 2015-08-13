@@ -22,3 +22,11 @@
 
 <%= link_to 'Edit', edit_portfolio_piece_path(@portfolio_piece) %> |
 <%= link_to 'Back', portfolio_pieces_path %>
+
+<h3>Photos for Portfolio Piece</h3>
+
+<% @portfolio_piece.portfolio_images.each do |image| %>
+	<ul>
+		<li><%= image_tag image.pic.url %></li>
+	</ul>
+<% end %>

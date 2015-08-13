@@ -22,5 +22,14 @@ module UpatfiveRails
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+        access_key_id: ENV['S3_KEY_ID'],
+        secret_access_key: ENV['S3_SECRET_KEY'],
+        bucket: "upatfive"
+        }
+    }
   end
 end

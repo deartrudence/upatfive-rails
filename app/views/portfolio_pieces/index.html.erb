@@ -2,6 +2,15 @@
 
 <h1>Listing Portfolio Pieces</h1>
 
+	<% @portfolio_pieces.each do |portfolio_piece|%>
+		<ul>
+			<li><%= portfolio_piece.title%></li>
+			<li><%= portfolio_piece.excerpt%></li>
+			<li><%= image_tag portfolio_piece.portfolio_images.first.pic.url %></li>
+			<li><%= link_to 'View', portfolio_piece %></li>
+		</ul>
+	<% end %>
 
 
+<%= link_to "add portfolio piece", new_portfolio_piece_path %>
 
