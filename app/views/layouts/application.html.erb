@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UpatfiveRails</title>
+  <title>Up at five</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
+<div id="page" class="hfeed site">
+	<a href="#content" class="skip-link screen-reader-text site-header__logo"><%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %></a>
+		
+
+<header id="masthead" class="site-header" role="banner">
+	
+	<nav id="site-navigation" class="site-header__navigation">
+		
+		<ul>
+			<li>test</li>
+			<li>test</li>
+			<li>test</li>
+			<li>test</li>
+			<li>test</li>
+		</ul>
+	</nav>
+</header>
+<!-- <h3>Nav Bar</h3> -->
+
+<div id="content" class="site-content">
 
 <%= yield %>
 
+</div>
+
+<p>footer</p>
+
+</div>
 </body>
 </html>
