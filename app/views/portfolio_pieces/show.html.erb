@@ -1,32 +1,63 @@
 <p id="notice"><%= notice %></p>
+<div id="single_work">
+  <header class="single_work__header" style="background:url(<%= @portfolio_piece.feature_image.url %>); no-repeat; background-size: cover;">
+    <div class="container">
+      <h2 class="header__title"></h2>
+      <a href="#portfolio">
+        <div class="read-more">
+          Read More
+        </div>
+      </a>
+    </div>
+  </header>
 
-<p>
-  <strong>Title:</strong>
-  <%= @portfolio_piece.title %>
-</p>
+  <div class="single_work__what-we-do single_work__content-block" id="portfolio">
+    <div class="container">
+    <h2><%= @portfolio_piece.title %></h2>
+      <h3><%= @portfolio_piece.client %></h3>
+      <div class="row">
+        <div class="col-half work__web">
+          <p class="attn"><%= @portfolio_piece.excerpt %></p>
+        </div>
+        <div class="col-half work__app">
+          <p class="contain"><%= @portfolio_piece.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Excerpt:</strong>
-  <%= @portfolio_piece.excerpt %>
-</p>
+  <div class="single_work__work">
+    <div class="row">
+      <% @portfolio_piece.portfolio_images.each do |image|%>
+        <div class="col-half single_work__image-container">
+          <div class="single_work__image" style="background:url(<%= image.pic.url %>); no-repeat; background-size: cover;">
+            
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @portfolio_piece.description %>
-</p>
 
-<p>
-  <strong>Client:</strong>
-  <%= @portfolio_piece.client %>
-</p>
+<hr><br>
+
 
 <%= link_to 'Edit', edit_portfolio_piece_path(@portfolio_piece) %> |
 <%= link_to 'Back', portfolio_pieces_path %>
 
-<h3>Photos for Portfolio Piece</h3>
 
-<% @portfolio_piece.portfolio_images.each do |image| %>
-	<ul>
-		<li><%= image_tag image.pic.url %></li>
-	</ul>
-<% end %>
+<script>
+  function headerHeight(){
+    var height = $(window).height() - 127 
+    var padding = (height - 54)/2
+    $('.header__title').css('padding', padding + 'px 0');
+  };
+  $(window).resize(function(){
+    headerHeight();
+  });
+  $(function(){
+    $(window).trigger('resize');
+  });
+</script>

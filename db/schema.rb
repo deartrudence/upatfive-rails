@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150813153623) do
+ActiveRecord::Schema.define(version: 20150907190509) do
 
   create_table "blog_entries", force: :cascade do |t|
     t.string   "title"
@@ -38,8 +38,12 @@ ActiveRecord::Schema.define(version: 20150813153623) do
     t.string   "excerpt"
     t.text     "description"
     t.string   "client"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "feature_image_file_name"
+    t.string   "feature_image_content_type"
+    t.integer  "feature_image_file_size"
+    t.datetime "feature_image_updated_at"
   end
 
 end
