@@ -30,9 +30,11 @@
 				</div>
 				<div class="col-half home__content">
 					<div class="contain-content--right">
-						<%= link_to portfolio_piece_path(@portfolio_piece) do %>
-							<h4><%= @portfolio_piece.title%></h4>
-							<p><%= @portfolio_piece.excerpt%></p>
+						<% if @portfolio_piece.present? %>
+							<%= link_to portfolio_piece_path(@portfolio_piece) do %>
+								<h4><%= @portfolio_piece.title%></h4>
+								<p><%= @portfolio_piece.excerpt%></p>
+							<% end %>
 						<% end %>
 					</div>
 				</div>
@@ -45,9 +47,11 @@
 			<div class="row">
 			<div class="col-half home__content">
 				<div class="contain-content--left">
-					<%= link_to blog_entry_path(@blog_entry) do%>
-						<h4><%= @blog_entry.title%></h4>
-						<p><%= @blog_entry.excerpt%></p>
+					<% if @blog_entry.present? %>
+						<%= link_to blog_entry_path(@blog_entry) do%>
+							<h4><%= @blog_entry.title%></h4>
+							<p><%= @blog_entry.excerpt%></p>
+						<% end %>
 					<% end %>
 				</div>
 			</div>
