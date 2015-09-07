@@ -14,6 +14,9 @@ gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'aws-sdk-v1'
 gem 'aws-s3'
 
+#for sass
+gem 'bourbon'
+
 group :development do
 	gem 'better_errors'
 end
