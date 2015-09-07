@@ -1,12 +1,9 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Blog Entries</h1>
-
 <main class="cd-main">
-      <div class="row">
+
   <ul class="cd-gallery">
     <% @blog_entries.each do |blog_entry| %>
-        <li class="cd-item col-half">
+        <li class="cd-item">
           <a href="blog_entries/<%=blog_entry.id%>">
             <div>
               <h2><%= blog_entry.title%></h2>
@@ -18,7 +15,7 @@
         
     <% end %>
   </ul>
-      </div>
+
 </main>
 
 <div class="cd-folding-panel">
