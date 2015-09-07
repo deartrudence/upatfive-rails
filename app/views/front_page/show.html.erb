@@ -30,8 +30,10 @@
 				</div>
 				<div class="col-half home__content">
 					<div class="contain-content--right">
-						<h4><%= @portfolio_piece.title%></h4>
-						<p><%= @portfolio_piece.excerpt%></p>
+						<%= link_to portfolio_piece_path(@portfolio_piece) do %>
+							<h4><%= @portfolio_piece.title%></h4>
+							<p><%= @portfolio_piece.excerpt%></p>
+						<% end %>
 					</div>
 				</div>
 			</div>
@@ -43,8 +45,10 @@
 			<div class="row">
 			<div class="col-half home__content">
 				<div class="contain-content--left">
-					<h4>THE TITLE</h4>
-					<p>THE EXERPT</p>
+					<%= link_to blog_entry_path(@blog_entry) do%>
+						<h4><%= @blog_entry.title%></h4>
+						<p><%= @blog_entry.excerpt%></p>
+					<% end %>
 				</div>
 			</div>
 			<div class="col-half home__image-container">
@@ -73,3 +77,16 @@
 </div>	
 
 
+<script>
+	function headerHeight(){
+		var height = $(window).height() - 127 
+		var padding = (height - 54)/2
+		$('.header__title').css('padding', padding + 'px 0');
+	};
+	$(window).resize(function(){
+	  headerHeight();
+	});
+	$(function(){
+		$(window).trigger('resize');
+	});
+</script>

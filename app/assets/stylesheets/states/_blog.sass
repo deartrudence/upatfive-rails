@@ -1,0 +1,50 @@
+.cd-main
+	:overflow-x hidden
+	:background-color mistyrose
+
+	&::before
+		:display none
+		:content 'mobile'
+	
+	> *
+		:transition transform 0.5s 0.4s
+	&.fold-is-open > *
+		:transform translateX(100%)
+		:transition transform 0.5s 0s
+.cd-folding-panel
+	:position fixed
+	:top 0
+	:left 0
+	:width 100%
+	:height 100vh
+	:visibility hidden
+	:overflow hidden
+	:transition visibility 0s 0.9s
+
+	.fold-left,
+	.fold-right
+		:width 100%
+		:height 100vh
+		:overflow hidden
+		:perspective 2000px
+	.fold-right
+		:perspective-origin 0% 50%
+		&:after
+			:content ''
+			:position absolute
+			:top 0
+			:left 0
+			:height 100%
+			:width 100%
+			:transform-origin right center
+			:transform translateX(-100%) rotateY(-90deg)
+			:transition transform 0.5s 0.4s, background-color 0.5s 0.4s
+	.is-open
+		:visibility visible
+		:transition visibility 0s 0s
+		.fold-right::after
+			:transform translateX(0)
+			:transition transformr 0.5s 0s, background-color 0.5s 0s
+	.fold-left
+		:display none
+		

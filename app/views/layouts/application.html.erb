@@ -11,41 +11,48 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body class="home page">
 <div id="page" class="hfeed site">
-	<% if controller.controller_name == "front_page" %>
-		<a href="#content" class="skip-link screen-reader-text site-header__logo"><%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %></a>
-    <% else %>
-      <%= link_to root_path, class: 'site-header__logo'  do %>
-      	<%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %>
-      <% end %>
-    <% end %>
+			
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="container">
+			<div class="site-header__logo">
+				<% if controller.controller_name == "front_page" %>
+					<a href="#content" class="skip-link screen-reader-text site-header__logo"><%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %></a>
+				<% else %>
+				  <%= link_to root_path, class: 'site-header__logo'  do %>
+				  	<%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %>
+				  <% end %>
+				<% end %>
+			</div>
+
+		<nav id="site-navigation" class="site-header__navigation">
+			
+			<ul>
+				<li>About Us</li>
+				<li><%= link_to "Work", portfolio_pieces_path %></li>
+				<li><%= link_to "Blog", blog_entries_path %></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
 		
+	</header>
+	<!-- /.masthead -->
 
-<header id="masthead" class="site-header" role="banner">
-	
-	<nav id="site-navigation" class="site-header__navigation">
-		
-		<ul>
-			<li>About Us</li>
-			<li><%= link_to "Work", portfolio_pieces_path %></li>
-			<li><%= link_to "Blog", blog_entries_path %></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-</header>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<!-- <h3>Nav Bar</h3> -->
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
 
-<div id="content" class="site-content">
 
-<%= yield %>
+	<div id="content" class="site-content">
 
-</div>
+	<%= yield %>
 
-<p>footer</p>
+	</div>
 
-</div>
+	<p>footer</p>
+
+</div>  <!-- /#page -->
 </body>
 </html>
