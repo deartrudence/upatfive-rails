@@ -13,15 +13,15 @@
 		+make-column(4)
 		+display-for(sm)
 			+make-column(6)
-			&:last-of-type
+			&:nth-child(3n)
 				+make-column(12)
 		+display-for(xs)
 			+make-column(12)		
 	&-fourth
 		+make-column(3)
-		+display-for(md)
+		+display-for(md sm)
 			+make-column(6)
-		+display-for(sm xs)
+		+display-for(xs)
 			+make-column(12)	
 	&-sixth
 		+make-column(2)	
