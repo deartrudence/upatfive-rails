@@ -13,7 +13,7 @@
 	&__item
 		:background white
 		:color white
-		.col-fourth
+		.col-half
 			:background #B9BEB3
 			:padding 20px
 			:position relative
@@ -25,10 +25,12 @@
 				:margin 10px 0
 
 			p 
-				:font-family $body-font
+				:font-family $header-font
 				:font-weight 100	
 				:line-height 24px
 				:font-size 14px
+			p.view-link
+				:font-family $body-font	
 			&:nth-child(4n)
 				:background $sea-green
 			&:nth-child(4n+2)
@@ -42,9 +44,9 @@
 		:background $light-grey
 		:top 0
 		:left 0
-		:padding 20px
+		:padding 50px
 		p 
-			:color $black						
+			:color $black					
 	.view-link
 		a 
 			:color $black

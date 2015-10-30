@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="single-page">
+<div class="single-page container">
   <h2><%= @blog_entry.title %></h2> 
 	<p>
-	  <%= simple_format(@blog_entry.words) %>
+	  <%= @blog_entry.words.html_safe %>
 	</p>
 </div>
 

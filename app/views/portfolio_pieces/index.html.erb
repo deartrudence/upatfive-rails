@@ -2,7 +2,7 @@
 <div id="work-index" class="work">
 	<div class="work__item row">
 		<% @portfolio_pieces.each do |portfolio_piece|%>
-			<div class="col-fourth work__item-single">
+			<div class="col-half work__item-single">
 				<% if portfolio_piece.portfolio_images.present? %>
 				<%= image_tag portfolio_piece.portfolio_images.first.pic.url %>
 				<% end%>
