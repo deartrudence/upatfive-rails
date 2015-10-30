@@ -20,49 +20,23 @@
 			</div>	
 		</div>
 	</div>
-
-		<div class="home__work">
-			<div class="row">
-				<div class="col-half home__image-container">
-					<div class="home__image">
-					</div>	
-					<div class="home--image-overlay"><%= link_to "The Portfolio", portfolio_pieces_path %></div>
-				</div>
-				<div class="col-half home__content">
-					<div class="contain-content--right">
-						<% if @portfolio_piece.present? %>
-							<%= link_to portfolio_piece_path(@portfolio_piece) do %>
-								<h4><%= @portfolio_piece.title%></h4>
-								<p><%= @portfolio_piece.excerpt%></p>
-							<% end %>
-						<% end %>
-					</div>
-				</div>
-			</div>
-		</div>	
+	
+<% if @portfolio_pieces.present? %>
+	<div class="our-work">
+	<%= link_to 'Our Work', portfolio_pieces_path, class: 'container' %>
+	<% @portfolio_pieces.each do |portfolio_piece| %>
+		<div class="featured" data-featured="<%= portfolio_piece.feature_image.url%>">
+			<%= link_to portfolio_piece_path(portfolio_piece), class: 'container' do %>
+				<h4 ><%= portfolio_piece.title%></h4>
+			<% end %>	
+		</div>		
+	<% end %>
+	</div>
+<% end %>
 
 
-	<!-- // Loop -->
-		<div class="home__blog">
-			<div class="row">
-			<div class="col-half home__content">
-				<div class="contain-content--left">
-					<% if @blog_entry.present? %>
-						<%= link_to blog_entry_path(@blog_entry) do%>
-							<h4><%= @blog_entry.title%></h4>
-							<p><%= @blog_entry.excerpt%></p>
-						<% end %>
-					<% end %>
-				</div>
-			</div>
-			<div class="col-half home__image-container">
-				<div class="home__image">
-				</div>	
-				<div class="home--image-overlay"><%= link_to "Blog", blog_entries_path%></div>
-			</div>
-			</div>
-		</div>
-<!-- 	<?php endwhile ?> -->
+
+
 	
 	<div class="home__contact home__content-block" id="contact">
 		<div class="container">
@@ -87,11 +61,17 @@
 		var padding = (height - 54)/2
 		$('.header__title').css('padding', padding + 'px 0');
 	};
+
+
 	$(window).resize(function(){
 	  headerHeight();
 	});
 	$(function(){
 		$(window).trigger('resize');
+		$('.featured').on('mouseenter', function(){
+			var background = $(this).data('featured')
+			$('.our-work').css('background', 'url(' + background +')')
+		})
 	});
 </script>
 
