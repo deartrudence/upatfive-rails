@@ -1,12 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="cd-fold-content single-page">
+<div class="single-page">
   <h2><%= @blog_entry.title %></h2> 
 	<p>
-	  <%= @blog_entry.words %>
+	  <%= simple_format(@blog_entry.words) %>
 	</p>
-	
 </div>
 
 
