@@ -64,6 +64,21 @@
 		$('.header__title').css('padding', padding + 'px 0');
 	};
 
+	function fadeBackground(background, image){
+		var active = $('.our-work .active')
+		var off = $('.our-work .off')
+		if(image == true){
+			off.css('background', 'url(' + background + ')');
+		}else if(image == false){
+			off.css('background', background);
+		}
+		active.fadeOut(400, function(){
+			active.addClass('off').removeClass('active')
+			off.addClass('active').removeClass('off')
+		});
+		off.fadeIn(400)
+	}
+
 
 	$(window).resize(function(){
 	  headerHeight();
@@ -73,22 +88,11 @@
 
 		$('.featured').on('mouseenter', function(){
 			var background = $(this).data('featured')
-			var active = $('.our-work .active')
-			var off = $('.our-work .off')
-			off.css('background', 'url(' + background + ')');
-			active.fadeOut(400, function(){
-				console.log('happening')
-				active.addClass('off')
-				active.removeClass('active')
-				off.addClass('active')
-				off.removeClass('off')
-			});
-			off.fadeIn(400)
+			fadeBackground(background, true);
 
 		});
 		$('.our-work').on('mouseleave', function(){
-		
-			$('.our-work .active').css('background', '#333')
+			fadeBackground('#242424', false)
 		});
 	});
 </script>
