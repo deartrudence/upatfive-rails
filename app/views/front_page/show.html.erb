@@ -2,8 +2,9 @@
 
 <div id="home">
 	<header class="home__header">
-		<div class="container">
-			<h2 class= "header__title">we are awake earlier than you</h2>
+		<div class="container header__title">
+			<h2>Up at Five</h2>
+			<h3>we are awake earlier than you</h3>
 		</div>
 	</header>
 
@@ -68,7 +69,7 @@
 		var active = $('.our-work .active')
 		var off = $('.our-work .off')
 		if(image == true){
-			off.css('background', 'url(' + background + ')');
+			off.css({'background': 'url(' + background + ')', 'background-size': 'cover'});
 		}else if(image == false){
 			off.css('background', background);
 		}
