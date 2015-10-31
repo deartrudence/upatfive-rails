@@ -72,6 +72,9 @@
 			var background = $(this).data('featured')
 			$('.our-work').css('background', 'url(' + background +')')
 		})
+		$('.featured').on('mouseleave', function(){
+			$('.our-work').css('background', '#333')
+		});
 	});
 </script>
 
