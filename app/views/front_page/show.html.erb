@@ -23,6 +23,8 @@
 	
 <% if @portfolio_pieces.present? %>
 	<div class="our-work">
+	<div class="hover active"></div>
+	<div class="hover off"></div>
 	<%= link_to 'Our Work', portfolio_pieces_path, class: 'container' %>
 	<% @portfolio_pieces.each do |portfolio_piece| %>
 		<div class="featured" data-featured="<%= portfolio_piece.feature_image.url%>">
@@ -68,12 +70,25 @@
 	});
 	$(function(){
 		$(window).trigger('resize');
+
 		$('.featured').on('mouseenter', function(){
 			var background = $(this).data('featured')
-			$('.our-work').css('background', 'url(' + background +')')
-		})
-		$('.featured').on('mouseleave', function(){
-			$('.our-work').css('background', '#333')
+			var active = $('.our-work .active')
+			var off = $('.our-work .off')
+			off.css('background', 'url(' + background + ')');
+			active.fadeOut(400, function(){
+				console.log('happening')
+				active.addClass('off')
+				active.removeClass('active')
+				off.addClass('active')
+				off.removeClass('off')
+			});
+			off.fadeIn(400)
+
+		});
+		$('.our-work').on('mouseleave', function(){
+		
+			$('.our-work .active').css('background', '#333')
 		});
 	});
 </script>
