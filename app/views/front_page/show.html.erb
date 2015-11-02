@@ -4,7 +4,7 @@
 	<header class="home__header">
 		<div class="container header__title">
 			<h2>Up at Five</h2>
-			<h3>we are awake earlier than you</h3>
+			<h3>we are <span>awake earlier than you</span></h3>
 		</div>
 	</header>
 
@@ -59,6 +59,10 @@
 
 
 <script>
+	var headerMessage = {
+		'morning': 'awake earlier than you',
+		'afternoon': 'on our third coffee'
+	}
 	function headerHeight(){
 		var height = $(window).height() - 127 
 		var padding = (height - 54)/2

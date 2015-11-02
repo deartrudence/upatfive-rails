@@ -1,23 +1,25 @@
 <p id="notice"><%= notice %></p>
-<div id="work-index" class="work">
-	<div class="work__item row">
-		<% @portfolio_pieces.each do |portfolio_piece|%>
-			<div class="col-half work__item-single">
-				<% if portfolio_piece.portfolio_images.present? %>
-				<%= image_tag portfolio_piece.portfolio_images.first.pic.url %>
-				<% end%>
-				<h4><%= portfolio_piece.title%></h4>
-				<div class="work--overlay hidden">
-					<p><%= portfolio_piece.excerpt%></p>
-					<p class="view-link"><%= link_to 'View Project', portfolio_piece %></p>
-				</div>
-			</div>
+<div class="container portfolio-header">
+	<h3>Client Work</h3>
+	<p class="attn">a tagline about all of the work we do</p>
+</div>
+<div class="row">
+	<% @portfolio_pieces.each do |portfolio_piece|%>
+		<div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>)">
+		<%= link_to portfolio_piece_path(portfolio_piece) do %>
+	
+			<h4><%= portfolio_piece.title%></h4>
+			<!-- <div class="work--overlay hidden">
+				<p><%= portfolio_piece.excerpt%></p>
+				<p class="view-link"><%= link_to 'View Project', portfolio_piece %></p>
+			</div> -->
 		<% end %>
-	</div>
+		</div>
+	<% end %>
+</div>
 
 <%= link_to "add portfolio piece", new_portfolio_piece_path %>
 
-</div>
 
 <script>
 	$('.work__item-single').on('mouseenter', function(){
