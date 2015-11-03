@@ -5,14 +5,15 @@
 </div>
 <div class="row">
 	<% @portfolio_pieces.each do |portfolio_piece|%>
-		<div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>)">
+		<div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
 		<%= link_to portfolio_piece_path(portfolio_piece) do %>
 	
-			<h4><%= portfolio_piece.title%></h4>
-			<!-- <div class="work--overlay hidden">
+		
+			<div class="overlay">
+				<h4><%= portfolio_piece.title%></h4>
 				<p><%= portfolio_piece.excerpt%></p>
-				<p class="view-link"><%= link_to 'View Project', portfolio_piece %></p>
-			</div> -->
+				<%= link_to 'View Project', portfolio_piece, class: 'button' %>
+			</div>
 		<% end %>
 		</div>
 	<% end %>
@@ -22,12 +23,14 @@
 
 
 <script>
-	$('.work__item-single').on('mouseenter', function(){
-		var overlay = $(this).find('.work--overlay');
-		overlay.removeClass('hidden')
+	$('.piece').on('mouseenter', function(){
+		var overlay = $(this).find('.overlay');
+		overlay.fadeIn('100')
+
 	});
-	$('.work__item-single').on('mouseleave', function(){
-		var overlay = $(this).find('.work--overlay');
-		overlay.addClass('hidden')
-	})
+	$('.piece').on('mouseleave', function(){
+		var overlay = $(this).find('.overlay');
+		overlay.fadeOut('80')
+
+	});
 </script>
