@@ -1,5 +1,6 @@
 class BlogEntriesController < ApplicationController
   before_action :set_blog_entry, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   # GET /blog_entries
   # GET /blog_entries.json

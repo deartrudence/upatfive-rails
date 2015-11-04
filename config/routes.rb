@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :portfolio_images
   resources :blog_entries
   resources :portfolio_pieces
