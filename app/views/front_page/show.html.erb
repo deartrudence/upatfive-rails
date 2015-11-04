@@ -8,7 +8,7 @@
 		</div>
 	</header>
 
-	<div class="home__what-we-do home__content-block">
+	<div id="whatWeDo" class="home__what-we-do home__content-block">
 		<div class="container">
 			<h3>What We Do</h3>
 			<div class="row">
@@ -100,5 +100,15 @@
 			fadeBackground('#242424', false)
 		});
 	});
+
+    $('#logo').on('click', function(e){
+        e.preventDefault;
+        console.log("on click")
+        $("body").animate({
+          scrollTop: $("#whatWeDo").offset().top
+        }, 1000);
+        console.log("animate")
+        
+    })
 </script>
 

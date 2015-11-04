@@ -19,7 +19,7 @@
 		<div class="container">
 			<div class="site-header__logo">
 				<% if controller.controller_name == "front_page" %>
-					<a href="#content" class="skip-link screen-reader-text site-header__logo"><%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %></a>
+					<a href="#whatWeDo" id="logo" class="skip-link screen-reader-text site-header__logo"><%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %></a>
 				<% else %>
 				  <%= link_to root_path, class: 'site-header__logo'  do %>
 				  	<%= image_tag "up-at-five-logo.png", :class => 'site-header__logo' %>
