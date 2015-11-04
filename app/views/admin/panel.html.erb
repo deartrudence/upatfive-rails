@@ -1,0 +1,27 @@
+<div id="admin" class="container">
+    <h1 class="center">Hello Panel!</h1>
+
+    <div class="row">
+        <div class="col-half">
+            <%= link_to "Add New Portfolio Piece", new_portfolio_piece_path %>
+        </div>
+        <div class="col-half">
+            <%= link_to "Add New Blog Entry", new_blog_entry_path %>
+        </div>
+        <div class="col-half">
+            <% @portfolio_pieces.each do |piece| %>
+                <ul>
+                    <li><%= link_to piece.title, edit_portfolio_piece_path(piece) %></li>          
+                </ul>
+           <% end %>
+        </div>
+        <div class="col-half">
+            <% @blog_entries.each do |entry| %>
+            <ul>
+                <li><%= link_to entry.title, edit_blog_entry_path(entry)%></li>
+            </ul>
+            <% end %>
+        </div>
+
+    </div>
+</div>

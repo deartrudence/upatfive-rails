@@ -11,23 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class="row">
+  <div class="field col-half">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
-    <%= f.label :excerpt %><br>
-    <%= f.text_field :excerpt %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
+  <div class="field col-half">
     <%= f.label :client %><br>
     <%= f.text_field :client %>
   </div>
-  <div class="field">
+  <div class="field col-full">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field col-full">
+    <%= f.label :excerpt %><br>
+    <%= f.text_field :excerpt %>
+  </div>
+  <div class="field col-full">
     <%= f.label "Upload Feature Image"%>
     <br>
     <%= f.file_field :feature_image%>
@@ -35,4 +36,6 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+    
+</div>
 <% end %>

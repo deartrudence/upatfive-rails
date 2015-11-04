@@ -1,8 +1,32 @@
-<h1>Editing Portfolio Piece</h1>
+<div class="container">
+    
+    <h1 class="center">Editing Portfolio Piece</h1>
 
-<%= render 'form' %>
+    <%= render 'form' %>
 
-<%= link_to 'Add Pic', new_portfolio_image_path(:portfolio_piece_id => @portfolio_piece.id) %>
+    <%= link_to 'Add Pic', new_portfolio_image_path(:portfolio_piece_id => @portfolio_piece.id) %> | 
 
-<%= link_to 'Show', @portfolio_piece %> |
-<%= link_to 'Back', portfolio_pieces_path %>
+    <%= link_to 'Show', @portfolio_piece %> |
+    <%= link_to 'Back', portfolio_pieces_path %>
+
+<h2 class="center">Portfolio Images for this Piece</h2>
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+    </tr>  
+  </thead>
+  <tbody>
+    <% @portfolio_piece.portfolio_images.each do |image| %>
+    <tr>
+      <td><img src="<%=image.pic.url%>" alt=""></td>
+      <td><%= link_to "edit |", edit_portfolio_image_path(image)%></td>
+      <td><%=link_to "delete", portfolio_image_path(image), method: :delete, data: {confirm: 'Are you sure?'}%></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
