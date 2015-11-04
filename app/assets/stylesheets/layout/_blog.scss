@@ -152,6 +152,12 @@ Patterns - reusable parts of our design
 
 	&:nth-of-type(4n+1) {
 		background-color: $color-1;
+		a{
+			color:#242424;
+		}
+		b{
+			border-color: #242424;
+		}
 	}
 
 	&:nth-of-type(4n+2) {
@@ -164,6 +170,12 @@ Patterns - reusable parts of our design
 
 	&:nth-of-type(4n+4) {
 		background-color: $color-4;
+		a{
+			color:#242424;
+		}
+		b{
+			border-color: #242424;
+		}
 	}
 
 	h2 {
@@ -173,7 +185,7 @@ Patterns - reusable parts of our design
 	p {
 		line-height: 1.2;
 		font-size: 1.4rem;
-		padding: 1em 0;
+		// padding: 1em 0;
 	}
 
 	b {
@@ -182,14 +194,15 @@ Patterns - reusable parts of our design
 			size: 1.2rem;
 			weight: bold;
 		}
-		text-transform: uppercase; 
-		letter-spacing: 1px;
-		padding: 10px 20px;
-		font-size: 14px;
-		font-family: $body-font;
-		text-transform: capitalize;
-		// border-radius: 50em;
-		border: 1px solid $color-6;
+		// text-transform: uppercase; 
+		// letter-spacing: 1px;
+		// padding: 10px 20px;
+		// font-size: 14px;
+		// font-family: $body-font;
+		// text-transform: capitalize;
+		// // border-radius: 50em;
+		// border: 1px solid $color-6;
+		@include button-style;
 	}
 	
 	@include MQ(L) {
