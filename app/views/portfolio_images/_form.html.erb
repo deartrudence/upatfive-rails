@@ -15,6 +15,9 @@
     <%= f.label "Upload Image" %><br>
     <%= f.file_field :pic %>
   </div>
+  <div class="field">
+      <%= f.collection_radio_buttons :width, PortfolioImage::WIDTH, :to_s, :humanize %>
+  </div>
   <div class="actions">
     <%= f.submit %>
     <%= hidden_field_tag :portfolio_piece_id,  @portfolio_piece.id %>

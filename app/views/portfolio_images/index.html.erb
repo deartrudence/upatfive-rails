@@ -17,7 +17,7 @@
         <td><%= portfolio_image.portfolio_piece_id %></td>
         <td><%= image_tag portfolio_image.pic.url %></td>
         <td><%= link_to 'Show', portfolio_image %></td>
-        <td><%= link_to 'Edit', edit_portfolio_image_path(portfolio_image) %></td>
+        <td><%= link_to 'Edit', edit_portfolio_image_path(portfolio_image, portfolio_piece_id: portfolio_image.portfolio_piece_id) %></td>
         <td><%= link_to 'Destroy', portfolio_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

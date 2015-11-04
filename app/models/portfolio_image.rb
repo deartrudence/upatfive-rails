@@ -1,4 +1,5 @@
 class PortfolioImage < ActiveRecord::Base
+  WIDTH = [ 'col-half', 'col-full']
   belongs_to :portfolio_piece
 
   has_attached_file :pic

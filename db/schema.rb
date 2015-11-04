@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150907190509) do
+ActiveRecord::Schema.define(version: 20151104154022) do
 
   create_table "blog_entries", force: :cascade do |t|
     t.string   "title"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150907190509) do
     t.string   "pic_content_type"
     t.integer  "pic_file_size"
     t.datetime "pic_updated_at"
+    t.string   "width"
   end
 
   add_index "portfolio_images", ["portfolio_piece_id"], name: "index_portfolio_images_on_portfolio_piece_id"
