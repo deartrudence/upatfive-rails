@@ -22,6 +22,44 @@
             </ul>
             <% end %>
         </div>
+    </div>
+
+   <hr>
+   <h2 class="center">Portfolio Pieces</h2>
+   <table>
+     <thead>
+       <tr>
+         <th>Order</th>
+         <th>Image</th>
+         <th></th>
+         <th></th>
+       </tr>  
+     </thead>
+     <tbody>
+       <% @portfolio_pieces.order(:order).each do |piece| %>
+       <tr>
+         <td><%= form_for(piece, remote: true) do |f| %>
+           <%= f.text_field :order, class: "piece-order" %>
+         <% end %></td>
+
+         <td><img src="<%=piece.feature_image.url%>" alt=""></td>
+         <td><%= link_to "edit |", edit_portfolio_piece_path(piece)%></td>
+         <td><%=link_to "delete", portfolio_piece_path(piece), method: :delete, data: {confirm: 'Are you sure?'}%></td>
+       </tr>
+       <% end %>
+     </tbody>
+   </table>
+   <script>
+     
+     $(function() {
+       $('.piece-order').change(function(){
+         $('.edit_portfolio_piece').submit();
+         console.log('somethings happening')
+       });
+     });
+   </script>
+
+
 
     </div>
 </div>
