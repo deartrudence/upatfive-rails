@@ -4,7 +4,7 @@ class PortfolioImagesController < ApplicationController
   # GET /portfolio_images
   # GET /portfolio_images.json
   def index
-    @portfolio_images = PortfolioImage.all
+    @portfolio_images = PortfolioImage.all.order(:order)
   end
 
   # GET /portfolio_images/1
@@ -75,6 +75,6 @@ class PortfolioImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_image_params
-      params.require(:portfolio_image).permit(:portfolio_piece_id, :pic, :width)
+      params.require(:portfolio_image).permit(:portfolio_piece_id, :pic, :width, :order)
     end
 end

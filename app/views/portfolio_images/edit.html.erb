@@ -1,6 +1,7 @@
-<h1>Editing Portfolio Image</h1>
+<div class="container">
+    <h1>Editing Portfolio Image</h1>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @portfolio_image %> |
-<%= link_to 'Back', portfolio_images_path %>
+    <%= render 'form' %>
+    
+    <%= link_to 'Back', edit_portfolio_piece_path(@portfolio_image.portfolio_piece) %>
+</div>

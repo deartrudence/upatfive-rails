@@ -14,19 +14,33 @@
 <table>
   <thead>
     <tr>
+      <th>Order</th>
       <th>Image</th>
       <th></th>
       <th></th>
     </tr>  
   </thead>
   <tbody>
-    <% @portfolio_piece.portfolio_images.each do |image| %>
+    <% @portfolio_piece.portfolio_images.order(:order).each do |image| %>
     <tr>
+      <td><%= form_for(image, remote: true) do |f| %>
+        <%= f.text_field :order, class: "webpage-name" %>
+      <% end %></td>
+
       <td><img src="<%=image.pic.url%>" alt=""></td>
-      <td><%= link_to "edit |", edit_portfolio_image_path(image)%></td>
+      <td><%= link_to "edit |", edit_portfolio_image_path(image, portfolio_piece_id: image.portfolio_piece_id)%></td>
       <td><%=link_to "delete", portfolio_image_path(image), method: :delete, data: {confirm: 'Are you sure?'}%></td>
     </tr>
     <% end %>
   </tbody>
 </table>
 </div>
+<script>
+  
+  $(function() {
+    $('.webpage-name').change(function(){
+      $('.edit_portfolio_image').submit();
+      console.log('somethings happening')
+    });
+  });
+</script>
