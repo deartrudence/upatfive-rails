@@ -2,14 +2,10 @@
 
 
 <div class="single-page container">
-  <h2><%= @blog_entry.title %></h2> 
+  <h2><%= @blog_entry.title %></h2>
+  <h5>permalink : upatfive.ca<%= link_to blog_entry_path(@blog_entry)%></h5> 
 	<p>
 	  <%= @blog_entry.words.html_safe %>
 	</p>
 </div>
 
-
-
-
-<%= link_to 'Edit', edit_blog_entry_path(@blog_entry) %> |
-<%= link_to 'Back', blog_entries_path %>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :portfolio_images
   resources :blog_entries
+  get 'blog/' => 'blog_entries#index'
   resources :portfolio_pieces
   get 'front_page/show'
   root "front_page#show"
