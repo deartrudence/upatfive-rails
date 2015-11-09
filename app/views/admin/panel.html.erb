@@ -43,8 +43,8 @@
          <% end %></td>
 
          <td><img src="<%=piece.feature_image.url%>" alt=""></td>
-         <td><%= link_to "edit |", edit_portfolio_piece_path(piece)%></td>
-         <td><%=link_to "delete", portfolio_piece_path(piece), method: :delete, data: {confirm: 'Are you sure?'}%></td>
+         <td><button class="button"><%= link_to "edit", edit_portfolio_piece_path(piece)%></button></td>
+         <td><button class="button-warning"><%=link_to "delete", portfolio_piece_path(piece), method: :delete, data: {confirm: 'Are you sure?'}%></button></td>
        </tr>
        <% end %>
      </tbody>

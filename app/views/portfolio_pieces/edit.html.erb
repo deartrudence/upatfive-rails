@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="single_work">
     
     <h1 class="center">Editing Portfolio Piece</h1>
 
@@ -28,8 +28,8 @@
       <% end %></td>
 
       <td><img src="<%=image.pic.url%>" alt=""></td>
-      <td><%= link_to "edit |", edit_portfolio_image_path(image, portfolio_piece_id: image.portfolio_piece_id)%></td>
-      <td><%=link_to "delete", portfolio_image_path(image), method: :delete, data: {confirm: 'Are you sure?'}%></td>
+      <td><button class="button"><%= link_to "edit", edit_portfolio_image_path(image, portfolio_piece_id: image.portfolio_piece_id)%></button></td>
+      <td><button class="button-warning"><%=link_to "delete", portfolio_image_path(image), method: :delete, data: {confirm: 'Are you sure?'}%></button></td>
     </tr>
     <% end %>
   </tbody>

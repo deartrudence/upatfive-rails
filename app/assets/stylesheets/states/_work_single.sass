@@ -21,11 +21,15 @@
 		:padding-left 50px
 		+display-for(sm xs)
 			:padding 0
-	.button
+	.button, .button-warning
 		+button-style
 		:margin-left 50px
+		a
+			:color white
 		+display-for(sm xs)
-			:margin-left 0		
+			:margin-left 0
+	.button-warning
+		:background red		
 .single_work
 	&__header
 		:background $sea-green
