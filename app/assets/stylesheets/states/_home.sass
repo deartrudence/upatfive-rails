@@ -57,7 +57,7 @@
 		:margin 0 auto
 		:font-size 16px
 		:font-weight 500
-		:color #78D18B
+		:color $green
 		:font-family $header-font
 		:letter-spacing 1.2px
 		:padding 20px 0
@@ -73,6 +73,10 @@
 		:display inline-block
 		:margin 0
 		:border-bottom 1px solid white
+		:transition all 0.3s
+		&:hover, &:focus, &:active
+			:color $green
+			:border-bottom 1px solid $green
 	.hover
 		:position absolute
 		:z-index 2

@@ -9,6 +9,7 @@
 	:border-radius 0
 	:background $green
 	:margin-top 20px
-	&:hover
-		:background rgba(120,209,139, 0.8)
+	:transition all 0.3s
+	&:hover, &:focus, &:active
+		:background darken($green, 20%)
 	

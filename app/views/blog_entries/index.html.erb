@@ -1,39 +1,46 @@
-<p id="notice"><%= notice %></p>
-<main class="cd-main">
+<div id="blog" class="hidden">
+    
+    <p id="notice"><%= notice %></p>
+    <main class="cd-main">
 
-  <ul class="cd-gallery">
-    <% @blog_entries.each do |blog_entry| %>
-        <li class="cd-item">
-          <a href="blog_entries/<%=blog_entry.id%>">
-            <div>
-              <h2><%= blog_entry.title%></h2>
-              <p><%= blog_entry.excerpt%></p>
-              <b>View More</b>
-            </div>         
-          </a>
-        </li>
-        
-    <% end %>
-  </ul>
+      <ul class="cd-gallery">
+        <% @blog_entries.each do |blog_entry| %>
+            <li class="cd-item">
+              <a href="blog_entries/<%=blog_entry.id%>">
+                <div>
+                  <h2><%= blog_entry.title%></h2>
+                  <p><%= blog_entry.excerpt%></p>
+                  <b>View More</b>
+                </div>         
+              </a>
+            </li>
+            
+        <% end %>
+      </ul>
 
-</main>
+    </main>
 
-<div class="cd-folding-panel">
+    <div class="cd-folding-panel">
 
-  <div class="fold-left"></div>
+      <div class="fold-left"></div>
 
-  <div class="fold-right"></div>
+      <div class="fold-right"></div>
 
-  <div class="cd-fold-content">
-    <!-- content will be loaded using javascript -->
-  </div>
+      <div class="cd-fold-content">
+        <!-- content will be loaded using javascript -->
+      </div>
 
-  <a href="#0" class="cd-close"></a>
-</div> <!-- .cd-folding-panel -->
+      <a href="#0" class="cd-close"></a>
+    </div> <!-- .cd-folding-panel -->
+</div>
 
 
 
 <script>
+
+$(document).on('ready page:load',function(){
+    $('#blog').fadeIn(1000);
+});
 jQuery(document).ready(function($){
   var gallery = $('.cd-gallery'),
     foldingPanel = $('.cd-folding-panel'),
