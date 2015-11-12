@@ -9,6 +9,9 @@ gem 'sqlite3'
 #for Authentification
 gem 'devise'
 
+#vanity URLs
+gem 'friendly_id', '~> 5.1.0'
+
 #for image management
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'aws-sdk-v1'

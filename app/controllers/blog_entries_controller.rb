@@ -65,11 +65,11 @@ class BlogEntriesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog_entry
-      @blog_entry = BlogEntry.find(params[:id])
+      @blog_entry = BlogEntry.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_entry_params
-      params.require(:blog_entry).permit(:title, :excerpt, :words)
+      params.require(:blog_entry).permit(:title, :excerpt, :words, :slug)
     end
 end

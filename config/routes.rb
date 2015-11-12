@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   resources :blog_entries
   get 'blog/' => 'blog_entries#index'
   resources :portfolio_pieces
+  get 'portfolio/' => 'portfolio_pieces#index'
   get 'front_page/show'
-  root "front_page#show"
+  root to: "front_page#show"
 
   get 'admin/panel'
   get '/admin' => 'admin#panel'

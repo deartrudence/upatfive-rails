@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108233600) do
+ActiveRecord::Schema.define(version: 20151112164005) do
 
   create_table "blog_entries", force: :cascade do |t|
     t.string   "title"
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(version: 20151108233600) do
     t.text     "words"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "slug"
   end
+
+  add_index "blog_entries", ["slug"], name: "index_blog_entries_on_slug", unique: true
 
   create_table "portfolio_images", force: :cascade do |t|
     t.integer  "portfolio_piece_id"
@@ -47,7 +50,10 @@ ActiveRecord::Schema.define(version: 20151108233600) do
     t.integer  "feature_image_file_size"
     t.datetime "feature_image_updated_at"
     t.integer  "order"
+    t.string   "slug"
   end
+
+  add_index "portfolio_pieces", ["slug"], name: "index_portfolio_pieces_on_slug", unique: true
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
