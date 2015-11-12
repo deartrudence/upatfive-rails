@@ -8,7 +8,7 @@
     <div class="row">
     	<% @portfolio_pieces.each do |portfolio_piece|%>
     		<div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
-    		<%= link_to portfolio_piece_path(portfolio_piece) do %>
+    		  <%= link_to portfolio_piece_path(portfolio_piece), class: 'piece' do %>
     	
     		
     			<div class="overlay">
@@ -28,12 +28,12 @@
     $(document).on('ready page:load',function(){
         $('#portfolio').fadeIn(1000);
     });
-	$('.piece').on('mouseenter', function(){
+	$('.piece').on('mouseenter focus', function(){
 		var overlay = $(this).find('.overlay');
 		overlay.fadeIn('100')
 
 	});
-	$('.piece').on('mouseleave', function(){
+	$('.piece').on('mouseleave blur', function(){
 		var overlay = $(this).find('.overlay');
 		overlay.fadeOut('80')
 

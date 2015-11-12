@@ -33,7 +33,11 @@
 				<li>About Us</li>
 				<li><%= link_to "Work", portfolio_pieces_path %></li>
 				<li><%= link_to "Blog", blog_path %></li>
-				<li><a href="#contact">Contact</a></li>
+                <% if controller.controller_name == "front_page" %>
+				    <li><a href="#contactUs" id="contact">Contact</a></li>
+                <% else %>
+                    <li><%= link_to "Contact", front_page_show_path + "#contactUs", :anchor => '#contactUs', id: "contact" %></li>
+                <% end %>
                 <% if current_user.present?%>
                 <li><%= link_to "Admin", admin_panel_path%></li>
                 <li><%= link_to "Sign out", destroy_user_session_path, method: :delete%></li><% end %>

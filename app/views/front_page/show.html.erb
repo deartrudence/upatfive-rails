@@ -28,11 +28,9 @@
 	<div class="hover off"></div>
 	<%= link_to 'Featured Work', portfolio_pieces_path, class: 'container title' %>
 	<% @portfolio_pieces.each do |portfolio_piece| %>
-		<div class="featured" tabindex="1" data-featured="<%= portfolio_piece.feature_image.url%>">
-			<%= link_to portfolio_piece_path(portfolio_piece), class: 'container' do %>
-				<h4 ><%= portfolio_piece.title%></h4>
-			<% end %>	
-		</div>		
+            <%= link_to portfolio_piece_path(portfolio_piece), :data => {:featured => portfolio_piece.feature_image.url }, class: 'container featured' do %> 
+                <h4><%= portfolio_piece.title %></h4>
+                <% end %>
 	<% end %>
 	</div>
 <% end %>
@@ -50,7 +48,7 @@
 				</div>
 				<div class="col-half">
 					<p class="contain">Let us know about what your project is and then we will chat about it and figure out some more stuff. Then we can start working on it and it will be swell.</p>
-					<button class="button">Contact Us</button>
+					<button id="contactUs" name="contactUs" class="button">Contact Us</button>
 				</div>
 			</div>
 		</div>
@@ -100,7 +98,6 @@
 		$('.featured').on('mouseenter focus', function(){
 			var background = $(this).data('featured')
 			fadeBackground(background, true);
-
 		});
 		$('.our-work').on('mouseleave blur', function(){
 			fadeBackground('#242424', false)
@@ -113,6 +110,13 @@
           scrollTop: $("#whatWeDo").offset().top
         }, 1000);
         
-    })
+    });
+    $('#contact').on('click', function(e){
+        e.preventDefault();
+        $("body").animate({
+          scrollTop: $("#contactUs").offset().top
+        }, 1000);
+        
+    });
 </script>
 
