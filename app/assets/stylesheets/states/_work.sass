@@ -4,6 +4,11 @@
 @import variables/colors
 @import variables/font
 @import mixins/button
+$piece-height-xl: 400px
+$piece-height-lg: 470px
+$piece-height-md: 380px
+$piece-height-sm: 320px
+$piece-height-xs: 300px
 .portfolio-header
 	:padding 100px 0	
 	h3
@@ -16,23 +21,28 @@
 		:line-height 30px
 		:letter-spacing 1.1px
 		:color $dark-grey
-		:width 60%				
+		:width 60%	
+					
 .piece
 	:position relative
 	:background-position center
 	+make-column(6)
 	+display-for(xl)
 		+make-column(4)
-		:min-height 382px
+		:min-height $piece-height-xl
 	+display-for(lg)
-		:min-height 468px
+		:min-height $piece-height-lg
 	+display-for(md)
-		:min-height 372px
-	+display-for(sm xs)
+		:min-height $piece-height-md
+	+display-for(sm)
+		:min-height $piece-height-sm	
+	+display-for(xs)
 		+make-column(12)
-		:min-height 260px
-	&:focus
-		:border 20px solid $green
+		:min-height $piece-height-xs
+	.piece-link
+		:position absolute
+		:width 100%
+		:height 100%	
 	.overlay
 		:display none
 		:background $light-grey
@@ -41,77 +51,40 @@
 		:height 100%
 		:top 0
 		:left 0
-		:padding 50px
-		p, a
-			:color $black
-		p 
-			:font-family $body-font	
-			:margin-bottom 0
-			:font-size 14px
+		:text-align center
+		:pointer-events none
+		:color $black
+		+display-for(xl)
+			:padding-top 150px
+		+display-for(lg)
+			:padding-top 180px
+		+display-for(md)
+			:padding-top 150px
+		+display-for(sm)
+			:padding-top 120px
+		+display-for(xs)
+			:padding-top 110px
 		h4 
-			:font-size 20px
+			:font-size 16px
 			:font-weight 300
-			:margin 0	
+			:text-transform uppercase
+			:margin 0
+			&:after
+				:content ''
+				:background $green
+				:max-width 40px
+				:margin 16px auto
+				:height 2px
+				:display block
+		a 
+			:font-family $body-font
+			:color $black
+			:font-size 12px		
+
+
 		.button 
 			+button-style
 			:display inline-block
 
 
 			
-// .work
-// 	&__description
-// 		:padding 100px 0
-// 		+display-for(sm xs)
-// 			:padding 0
-// 			:padding-top 25px
-// 	&__item
-// 		:background white
-// 		:color white
-// 		.col-half
-// 			:background #B9BEB3
-// 			:padding 20px
-// 			:position relative
-// 			img
-// 				:width 80%
-// 				:margin 0 10%
-
-// 			h4
-// 				:margin 10px 0
-
-// 			p 
-// 				:font-family $header-font
-// 				:font-weight 100	
-// 				:line-height 24px
-// 				:font-size 14px
-// 			p.view-link
-// 				:font-family $body-font	
-// 			&:nth-child(4n)
-// 				:background $sea-green
-// 			&:nth-child(4n+2)
-// 				:background #2E332C
-// 			&:nth-child(4n+3)
-// 				:background $sea-green-light
-// 	&--overlay
-// 		:position absolute
-// 		:width 100%
-// 		:height 100%
-// 		:background $light-grey
-// 		:top 0
-// 		:left 0
-// 		:padding 50px
-// 		p 
-// 			:color $black					
-// 	.view-link
-// 		a 
-// 			:color $black
-// 			:padding 10px 20px
-// 			:border 1px solid $black
-// 			&:hover
-// 				:text-decoration underline
-
-					
-// 	.row
-// 		:margin-bottom 50px
-// 	.hidden
-// 		:display none	
-// #work-index

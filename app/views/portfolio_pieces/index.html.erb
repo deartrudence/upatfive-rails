@@ -7,17 +7,16 @@
     </div>
     <div class="row">
     	<% @portfolio_pieces.each do |portfolio_piece|%>
-    		<div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
-    		  <%= link_to portfolio_piece_path(portfolio_piece), class: 'piece' do %>
+            <div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
+    		<%= link_to portfolio_piece_path(portfolio_piece), class: 'piece-link' do %>
     	
-    		
-    			<div class="overlay">
-    				<h4><%= portfolio_piece.title%></h4>
-    				<p><%= portfolio_piece.excerpt%></p>
-    				<%= link_to 'View Project', portfolio_piece, class: 'button' %>
-    			</div>
     		<% end %>
-    		</div>
+    		  <div class="overlay">
+    				<h4><%= portfolio_piece.title%></h4>
+    				<%= link_to "View Piece", portfolio_piece_path(portfolio_piece) %>
+    		  </div> 
+            </div>
+    		
     	<% end %>
     </div>
 </div>
@@ -28,14 +27,24 @@
     $(document).on('ready page:load',function(){
         $('#portfolio').fadeIn(1000);
     });
-	$('.piece').on('mouseenter focus', function(){
+	$('.piece').on('mouseenter', function(){
 		var overlay = $(this).find('.overlay');
 		overlay.fadeIn('100')
 
 	});
-	$('.piece').on('mouseleave blur', function(){
+	$('.piece').on('mouseleave', function(){
 		var overlay = $(this).find('.overlay');
-		overlay.fadeOut('80')
+		overlay.fadeOut('100')
 
 	});
+    $('.piece-link').on('focus', function(){
+        var overlay = $(this).find('.overlay');
+        overlay.fadeIn('100')
+
+    });
+    $('.piece-link').on('blur', function(){
+        var overlay = $(this).find('.overlay');
+        overlay.fadeOut('100')
+
+    });
 </script>
