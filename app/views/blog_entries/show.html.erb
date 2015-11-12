@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="single-page container">
+<div class="single-page container hidden" id="blog-entry">
   <h2><%= @blog_entry.title %></h2>
-  <h5>permalink : upatfive.ca<%= link_to blog_entry_path(@blog_entry)%></h5> 
-  <a href="localhost:3000/blog_entries/<%=@blog_entry.slug%>">blog entry</a>
+  <a href="http://localhost:3000/blog/<%=@blog_entry.slug%>">Permalink</a>
   <p><%= @blog_entry.created_at.strftime("%B %d, %Y")%></p>
 	<p>
 	  <%= @blog_entry.words.html_safe %>
@@ -14,6 +13,10 @@
 <script>
     jQuery(document).ready(function($){
         Rainbow.color();
+    });
+
+    $(document).on('ready page:load',function(){
+        $('#blog-entry').fadeIn(1000);
     });
     
 </script>
