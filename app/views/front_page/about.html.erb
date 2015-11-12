@@ -1,0 +1,20 @@
+<div class="hidden" id="aboutUs">
+	<div class="container">
+		<h3>Us.</h3>
+		<p class="attn">a tagline about all the us we are</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-half">
+				<img src="" alt="">
+			</div>
+			<div class="col-half"></div>
+		</div>
+	</div>
+	<%= render template: 'contact/contact'%>
+</div>
+<script>
+	$(document).on('ready page:load',function(){
+	    $('#aboutUs').fadeIn(1000);
+	});
+</script>

@@ -180,6 +180,7 @@ Patterns - reusable parts of our design
 
 	h2 {
 		font-size: 2.2rem;
+		font-weight: 500;
 	}
 
 	p {
@@ -439,6 +440,7 @@ folding panel
 	
 	h2 {
 		font-size: 2.4rem;
+		font-weight: 500;
 
 		@include transition(transform $fold-content-animation/2 $fold-content-animation/2, opacity $fold-content-animation/2 $fold-content-animation/2);
 	}

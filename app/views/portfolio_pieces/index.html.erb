@@ -8,17 +8,18 @@
     <div class="row">
     	<% @portfolio_pieces.each do |portfolio_piece|%>
             <div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
-    		<%= link_to portfolio_piece_path(portfolio_piece), class: 'piece-link' do %>
+    		<%= link_to portfolio_piece_path(portfolio_piece), {class: 'piece-link', data: {trigger: portfolio_piece.id}} do %>
     	
     		<% end %>
-    		  <div class="overlay">
+    		  <div class="overlay overlay-<%= portfolio_piece.id%>">
     				<h4><%= portfolio_piece.title%></h4>
-    				<%= link_to "View Piece", portfolio_piece_path(portfolio_piece) %>
+    				<span>View Project</span>
     		  </div> 
             </div>
     		
     	<% end %>
     </div>
+    <%= render template: 'contact/contact'%>
 </div>
 
 
@@ -37,14 +38,17 @@
 		overlay.fadeOut('100')
 
 	});
-    $('.piece-link').on('focus', function(){
-        var overlay = $(this).find('.overlay');
+    $('.piece-link').on('focus', function(e){
+        e.preventDefault()
+        var trigger = $(this).data('trigger')
+        var overlay = $('.overlay-'+trigger)
         overlay.fadeIn('100')
 
     });
-    $('.piece-link').on('blur', function(){
-        var overlay = $(this).find('.overlay');
+    $('.piece-link').on('blur', function(e){
+        e.preventDefault()
+        var trigger = $(this).data('trigger')
+        var overlay = $('.overlay-'+trigger)
         overlay.fadeOut('100')
-
     });
 </script>
