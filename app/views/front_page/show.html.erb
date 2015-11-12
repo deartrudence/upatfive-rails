@@ -28,9 +28,9 @@
 	<div class="hover off"></div>
 	<%= link_to 'Featured Work', portfolio_pieces_path, class: 'container title' %>
 	<% @portfolio_pieces.each do |portfolio_piece| %>
-            <%= link_to portfolio_piece_path(portfolio_piece), :data => {:featured => portfolio_piece.feature_image.url }, class: 'container featured' do %> 
+        <%= link_to portfolio_piece_path(portfolio_piece), :data => {:featured => portfolio_piece.feature_image.url }, class: 'container featured' do %> 
                 <h4><%= portfolio_piece.title %></h4>
-                <% end %>
+        <% end %>
 	<% end %>
 	</div>
 <% end %>
@@ -61,6 +61,8 @@
         $('#home').fadeIn(1000, function(){
           $('.sub-title').fadeIn(2000);  
         });
+        var images = $('.featured').data('featured')
+        console.log(images)
     });
 
 	var headerMessage = {
