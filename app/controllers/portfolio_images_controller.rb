@@ -75,6 +75,6 @@ class PortfolioImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_image_params
-      params.require(:portfolio_image).permit(:portfolio_piece_id, :pic, :width, :order)
+      params.require(:portfolio_image).permit(:portfolio_piece_id, :pic, :width, :order, :color)
     end
 end

@@ -18,6 +18,10 @@
   <div class="field radio">
       <%= f.collection_radio_buttons :width, PortfolioImage::WIDTH, :to_s, :humanize %>
   </div>
+  <div class="field">
+    <%= f.label "Background Color"%>
+    <%= f.text_field :color %>
+  </div>
   <div class="actions">
     <%= f.submit %>
     <%= hidden_field_tag :portfolio_piece_id,  @portfolio_piece.id %>

@@ -28,11 +28,9 @@
   <div class="single_work__work">
     <div class="row">
       <% @portfolio_piece.portfolio_images.order(:order).each do |image|%>
-        <div class="<%= image.width %> single_work__image-container">
-          <div class="single_work__image" style="background:url(<%= image.pic.url %>); no-repeat; background-size: cover;">
-            
-          </div>
-        </div>
+        <div class="single_work__image-container <%= image.width %>" style="background-color: <%= image.color %>;">
+          <img src="<%= image.pic.url %>">
+        </div>  
       <% end %>
     </div>
   </div>
