@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'portfolio/' => 'portfolio_pieces#index'
   get 'portfolio/:id/' => 'portfolio_pieces#show'
   get 'front_page/show'
+
+  get 'front_page/about', to: 'front_page#about'
   root to: "front_page#show"
 
   get 'admin/panel'

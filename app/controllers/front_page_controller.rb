@@ -3,4 +3,6 @@ class FrontPageController < ApplicationController
 	def show
 		@portfolio_pieces = PortfolioPiece.all.order(:order).limit(3)		
 	end
+	def about
+	end
 end
