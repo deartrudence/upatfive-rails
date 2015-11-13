@@ -1,12 +1,29 @@
-.about
-	&__header
-		+header
-	&__image
-		:position relative	
-		img
-			:filter grayscale(100%)
-		&--jordan
-			img
-				:float right
-	.row
-		:margin-bottom 75px							
+#aboutUs
+	.col-half	
+		&:first-of-type
+			:padding-right 50px
+			+display-for(sm xs)
+				:padding-right 0
+		&:last-of-type
+			:padding-left 50px	
+			+display-for(sm xs)
+				:padding-left 0	
+			
+		img 
+			:width 80%
+			:margin-bottom 30px
+			+display-for(sm xs)
+				:width 70%
+		h4
+			:margin-top 0
+			:font-weight 300
+		h4 ~ p 
+			:margin-bottom 60px
+	.quote
+		:background $light-grey
+		p 
+			:color $green
+			:font-size 28px
+			:line-height 42px
+			:padding 60px
+			:margin 0
