@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151113204847) do
+ActiveRecord::Schema.define(version: 20151119181908) do
 
   create_table "blog_entries", force: :cascade do |t|
     t.string   "title"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20151113204847) do
     t.datetime "feature_image_updated_at"
     t.integer  "order"
     t.string   "slug"
+    t.string   "link"
   end
 
   add_index "portfolio_pieces", ["slug"], name: "index_portfolio_pieces_on_slug", unique: true
