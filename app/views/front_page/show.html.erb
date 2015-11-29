@@ -3,7 +3,8 @@
 	<header class="home__header">
 		<div class="container header__title">
 			<h2>Up at Five</h2>
-			<h3 class="hidden sub-title">we are awake earlier</h3>
+			<h3 class="hidden sub-title-01">A digital studio focused on data-driven applications</h3>
+			<h3 class="hidden sub-title-02">we are awake earlier</h3>
 		</div>
 	</header>
 
@@ -40,7 +41,9 @@
 <script>
     $(document).on('ready page:load',function(){
         $('#home').fadeIn(1000, function(){
-          $('.sub-title').fadeIn(2000);  
+          $('.sub-title-01').fadeIn(1000, function(){	
+          	$('.sub-title-02').fadeIn(1000)
+          });  
         });
         var images = $('.featured').data('featured')
         console.log(images)
