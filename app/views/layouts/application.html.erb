@@ -47,7 +47,7 @@
 				<li><%= link_to "About Us", front_page_about_path %></li>
 				<li><%= link_to "Work", portfolio_pieces_path %></li>
 				<li><%= link_to "Blog", blog_path %></li>
-				<% if controller.controller_name == "front_page" || controller.action_name == 'index' && controller.controller_name == 'portfolio_pieces'%>
+				<% if controller.controller_name != "blog_entries" %>
 					<li><a href="#contactUs" id="contact">Contact</a></li>
 				<% else %>
 				   

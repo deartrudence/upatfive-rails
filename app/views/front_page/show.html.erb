@@ -55,7 +55,7 @@
 	function headerHeight(){
 		var height = $(window).height() - 127 
 		var padding = (height - 54)/2
-		$('.header__title').css('padding', padding + 'px 0');
+		$('.header__title').css({'padding-top': padding + 'px', 'padding-bottom': padding + 'px'});
 	};
 
 	function fadeBackground(background, image){
