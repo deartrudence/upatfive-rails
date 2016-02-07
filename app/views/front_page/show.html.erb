@@ -3,7 +3,7 @@
 	<header class="home__header">
 		<div class="container header__title">
 			<h2>Up at Five</h2>
-			<h3 class="hidden sub-title-01">A digital studio focused on data-driven applications</h3>
+			<h3 class="hidden sub-title-01">A digital studio focused on data-driven web applications</h3>
 		</div>
 	</header>
 
@@ -12,37 +12,37 @@
 			<h3>What We Do</h3>
 			<div class="row">
 				<div class="col-half home__web">
-					<p class= "attn">A digital studio focused on data-driven applications.</p>
+					<p class= "attn">A digital studio focused on data-driven web applications.</p>
 				</div>
 				<div class="col-half home__app">
 					<p class="contain">We build accessible web applications that provide solutions to real problems. Our projects are data driven, emphasizing the content, with a focus on user experience.</p>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
-	
+
 <% if @portfolio_pieces.present? %>
 	<div class="our-work">
 	<div class="hover active"></div>
 	<div class="hover off"></div>
 	<%= link_to 'Featured Work', portfolio_pieces_path, class: 'container title' %>
 	<% @portfolio_pieces.each do |portfolio_piece| %>
-        <%= link_to portfolio_piece_path(portfolio_piece), :data => {:featured => portfolio_piece.feature_image.url }, class: 'container featured' do %> 
+        <%= link_to portfolio_piece_path(portfolio_piece), :data => {:featured => portfolio_piece.feature_image.url }, class: 'container featured' do %>
                 <h4><%= portfolio_piece.title %></h4>
         <% end %>
 	<% end %>
 	</div>
 <% end %>
 	<%= render template: 'contact/contact'%>
-</div>	
+</div>
 
 
 <script>
     $(document).on('ready page:load',function(){
         $('#home').fadeIn(1000, function(){
-          $('.sub-title-01').fadeIn(1000, function(){	
+          $('.sub-title-01').fadeIn(1000, function(){
           	$('.sub-title-02').fadeIn(1000)
-          });  
+          });
         });
         var images = $('.featured').data('featured')
         console.log(images)
@@ -53,7 +53,7 @@
 		'afternoon': 'on our third coffee'
 	}
 	function headerHeight(){
-		var height = $(window).height() - 127 
+		var height = $(window).height() - 127
 		var padding = (height - 54)/2
 		$('.header__title').css({'padding-top': padding + 'px', 'padding-bottom': padding + 'px'});
 	};
@@ -94,14 +94,14 @@
         $("body").animate({
           scrollTop: $("#whatWeDo").offset().top
         }, 1000);
-        
+
     });
     $('#contact').on('click', function(e){
         e.preventDefault();
         $("body").animate({
           scrollTop: $("#contactUs").offset().top
         }, 1000);
-        
+
     });
 </script>
 
