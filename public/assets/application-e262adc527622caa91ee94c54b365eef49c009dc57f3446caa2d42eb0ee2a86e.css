@@ -1,0 +1,2809 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+body, figure {
+  margin: 0;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 4, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 6, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/_front_page.css.scss */
+h1 {
+  color: white;
+}
+
+/**
+ * Monokai theme
+ *
+ * Adapted from Wimer Hazenberg's TextMate theme of the same name
+ *
+ * @author Wimer Hazenberg
+ * @author Michael Fasani
+ * @author Craig Campbell
+ * @version 1.0.0
+ */
+/* line 11, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre {
+  background: #272822;
+  word-wrap: break-word;
+  margin: 0px;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre, code {
+  font-family: 'Monaco', courier, monospace;
+}
+
+/* line 25, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .comment {
+  color: #75715E;
+}
+
+/* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .constant {
+  color: #AE81FF;
+}
+
+/* line 33, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .storage {
+  color: #66D9EF;
+}
+
+/* line 37, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .string, pre .comment.docstring {
+  color: #E6DB74;
+}
+
+/* line 41, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .support.tag {
+  color: #fff;
+}
+
+/* line 45, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .keyword {
+  /* @todo some keywords use this light blue, most use the pink */
+  /*color: #66D9EF;*/
+  color: #F92672;
+}
+
+/* line 51, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .selector {
+  color: #F92672;
+}
+
+/* line 55, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .inherited-class {
+  font-style: italic;
+}
+
+/* line 59, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .operator, pre .support.tag-name, pre .entity.tag {
+  color: #F92672;
+}
+
+/* line 63, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .entity, pre .support.attribute, pre .entity.attribute {
+  color: #A6E22E;
+}
+
+/* line 67, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .support, *[data-language="c"] .function.call {
+  color: #66D9EF;
+}
+
+/* line 71, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+*[data-language="html"] .support.operator {
+  color: #fff;
+}
+
+/* line 75, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .css-property, pre .storage.function {
+  font-style: italic;
+}
+
+/* line 79, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/theme.css */
+pre .variable.global, pre .variable.class, pre .variable.instance {
+  color: #A6E22E;
+}
+
+/* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+.group, .container {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 599px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+/* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+.contain-content--left {
+  line-height: 28px;
+  width: 100%;
+  float: right;
+  padding-right: 50px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    max-width: 573px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    max-width: 468px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    max-width: 372px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    max-width: 290px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    max-width: 1000px;
+    padding-right: 0;
+    float: none;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 1170px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 600px) and (max-width: 767px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (max-width: 599px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 1170px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (max-width: 499px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 500px) and (max-width: 767px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    max-width: 1000px;
+    padding-right: 0;
+    float: none;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 1170px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 600px) and (max-width: 767px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (max-width: 599px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 1170px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) and (max-width: 499px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 500px) and (max-width: 767px) {
+  /* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--left {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+/* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+.contain-content--right {
+  line-height: 28px;
+  width: 100%;
+  padding-left: 50px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    max-width: 573px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    max-width: 468px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    max-width: 372px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    max-width: 290px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    padding-left: 0;
+    max-width: 1000px;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 1170px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 600px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (max-width: 599px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 1170px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (max-width: 499px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) and (min-width: 500px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    padding-left: 0;
+    max-width: 1000px;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 1170px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 600px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) and (max-width: 599px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 1170px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 960px) and (max-width: 1169px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 768px) and (max-width: 959px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) and (max-width: 499px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 500px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_contain-col.sass */
+  .contain-content--right {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+/* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+.group, .container {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 599px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+.col--half {
+  box-sizing: border-box;
+  width: 41.66667%;
+  margin-left: 0%;
+  margin-right: 8.33333%;
+}
+/* line 5, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+.col--half:last-of-type {
+  margin-left: 8.33333%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* line 10, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half:last-of-type {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* line 10, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half:last-of-type {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+/* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+.col--half-left {
+  box-sizing: border-box;
+  width: 41.66667%;
+  margin-left: 8.33333%;
+  margin-right: 0%;
+}
+/* line 15, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+.col--half-left:last-of-type {
+  margin-left: 0%;
+  margin-right: 8.33333%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half-left {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* line 20, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half-left:last-of-type {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half-left {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* line 20, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+  .col--half-left:last-of-type {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+/* line 22, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+.col--half-small {
+  box-sizing: border-box;
+  width: 47.91667%;
+  margin-left: 0%;
+  margin-right: 2.08333%;
+}
+/* line 25, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_col-gutter.sass */
+.col--half-small:last-of-type {
+  margin-left: 2.08333%;
+  margin-right: 0%;
+}
+
+/* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+.group, .container {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: 580px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 599px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 21, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_container.sass */
+  .group, .container {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+/* line 16, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* line 20, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 24, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #F9F9F9;
+}
+
+/* line 33, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+a {
+  color: #7E7E7E;
+  text-decoration: none;
+}
+
+/* line 38, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+h1, h2 {
+  font-family: "Avenir", "Helvetica", sans-serif;
+}
+
+/* --------------------------------
+
+Patterns - reusable parts of our design
+
+-------------------------------- */
+/* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* line 54, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-main {
+  overflow-x: hidden;
+}
+/* line 57, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-main::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  display: none;
+  content: 'mobile';
+}
+/* line 63, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-main > * {
+  -webkit-transition: -webkit-transform 0.5s 0.4s;
+  -moz-transition: -moz-transform 0.5s 0.4s;
+  transition: transform 0.5s 0.4s;
+}
+/* line 67, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-main.fold-is-open > * {
+  /* on mobile - translate .cd-main content to the right when the .cd-folding-panel is open */
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s 0s;
+  -moz-transition: -moz-transform 0.5s 0s;
+  transition: transform 0.5s 0s;
+}
+@media only screen and (min-width: 600px) {
+  /* line 75, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-main.fold-is-open > * {
+    -webkit-transform: translateX(600px);
+    -moz-transform: translateX(600px);
+    -ms-transform: translateX(600px);
+    -o-transform: translateX(600px);
+    transform: translateX(600px);
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 82, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-main::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+  /* line 87, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-main.fold-is-open > * {
+    /* reset style - on bigger devices we translate the gallery items */
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 20, /Users/trudy/.rvm/gems/ruby-2.2.1/gems/bourbon-4.2.4/app/assets/stylesheets/addons/_clearfix.scss */
+.cd-gallery::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 97, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-gallery::before {
+  /* this is the dark layer covering the .cd-gallery when the .cd-folding-panel is open */
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(28, 23, 38, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
+  -moz-transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
+  transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
+}
+/* line 113, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.fold-is-open .cd-gallery::before {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.5s 0s, visibility 0s 0s;
+  transition: opacity 0.5s 0s, visibility 0s 0s;
+}
+
+/* line 120, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s 0.4s;
+  -moz-transition: -moz-transform 0.5s 0.4s;
+  transition: transform 0.5s 0.4s;
+}
+/* line 131, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item > a {
+  display: table;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 139, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item > a.dark-text {
+  color: #F9F9F9;
+}
+/* line 142, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item > a.dark-text b {
+  border-color: #F9F9F9;
+}
+/* line 148, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 153, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+1) {
+  background-color: #F9F9F9;
+}
+/* line 155, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+1) a {
+  color: #242424;
+}
+/* line 158, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+1) b {
+  border-color: #242424;
+}
+/* line 163, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+2) {
+  background-color: #7E7E7E;
+}
+/* line 167, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+3) {
+  background-color: #242424;
+}
+/* line 171, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+4) {
+  background-color: white;
+}
+/* line 173, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+4) a {
+  color: #242424;
+}
+/* line 176, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item:nth-of-type(4n+4) b {
+  border-color: #242424;
+}
+/* line 181, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+/* line 186, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item p {
+  line-height: 1.2;
+  font-size: 1.4rem;
+}
+/* line 192, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-item b {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1100px) {
+  /* line 120, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-item {
+    width: 50%;
+    float: left;
+    height: 520px;
+    -webkit-transition: -webkit-transform 0.5s 0.4s;
+    -moz-transition: -moz-transform 0.5s 0.4s;
+    transition: transform 0.5s 0.4s;
+  }
+  /* line 214, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-item h2 {
+    font-size: 3rem;
+  }
+  /* line 218, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-item p {
+    font-size: 1.6rem;
+  }
+  /* line 222, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-item h2, .cd-item p {
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: -webkit-transform 0.3s 0.1s;
+    -moz-transition: -moz-transform 0.3s 0.1s;
+    transition: transform 0.3s 0.1s;
+  }
+  /* line 227, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-item b {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: opacity 0.3s 0s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, transform 0.3s 0s;
+  }
+  /* line 235, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .no-touch .cd-item a:hover h2, .no-touch .cd-item a:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.3s 0s;
+    -moz-transition: -moz-transform 0.3s 0s;
+    transition: transform 0.3s 0s;
+  }
+  /* line 240, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .no-touch .cd-item a:hover b {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity 0.3s 0.1s, -webkit-transform 0.3s 0.1s;
+    -moz-transition: opacity 0.3s 0.1s, -moz-transform 0.3s 0.1s;
+    transition: opacity 0.3s 0.1s, transform 0.3s 0.1s;
+  }
+  /* line 247, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .fold-is-open .cd-item {
+    -webkit-transition: -webkit-transform 0.5s 0s;
+    -moz-transition: -moz-transform 0.5s 0s;
+    transition: transform 0.5s 0s;
+    -webkit-transform: translateX(-400px);
+    -moz-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+    transform: translateX(-400px);
+  }
+  /* line 251, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .fold-is-open .cd-item:nth-of-type(2n) {
+    -webkit-transform: translateX(400px);
+    -moz-transform: translateX(400px);
+    -ms-transform: translateX(400px);
+    -o-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+}
+
+/* --------------------------------
+
+folding panel
+
+-------------------------------- */
+/* line 264, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-transition: visibility 0s 0.9s;
+  -moz-transition: visibility 0s 0.9s;
+  transition: visibility 0s 0.9s;
+}
+/* line 276, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .fold-left,
+.cd-folding-panel .fold-right {
+  /* the :after elements of .fold-left and .fold-right are the 2 fold sides */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  /* enable a 3D-space for children elements */
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  perspective: 2000px;
+}
+/* line 287, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .fold-left::after,
+.cd-folding-panel .fold-right::after {
+  /* 2 fold sides */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s 0.4s, background-color 0.5s 0.4s;
+  -moz-transition: -moz-transform 0.5s 0.4s, background-color 0.5s 0.4s;
+  transition: transform 0.5s 0.4s, background-color 0.5s 0.4s;
+}
+/* line 304, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .fold-right {
+  -webkit-perspective-origin: 0% 50%;
+  -moz-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+/* line 307, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .fold-right::after {
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transform: translateX(-100%) rotateY(-90deg);
+  -moz-transform: translateX(-100%) rotateY(-90deg);
+  -ms-transform: translateX(-100%) rotateY(-90deg);
+  -o-transform: translateX(-100%) rotateY(-90deg);
+  transform: translateX(-100%) rotateY(-90deg);
+  background-color: #e6e6e6;
+}
+/* line 314, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .fold-left {
+  /* on mobile only the right fold side is visible */
+  display: none;
+}
+/* line 318, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .fold-left::after {
+  background-color: white;
+}
+/* line 323, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .cd-close {
+  /* 'X' close icon */
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+  height: 44px;
+  width: 44px;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s 0s;
+  -moz-transition: opacity 0.2s 0s;
+  transition: opacity 0.2s 0s;
+}
+/* line 341, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .cd-close::after, .cd-folding-panel .cd-close::before {
+  /* lines of 'X' icon */
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 32px;
+  left: 50%;
+  top: 50%;
+  background-color: #242424;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+/* line 355, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .cd-close::after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+/* line 359, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel .cd-close::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+/* line 364, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel.is-open {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+/* line 368, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel.is-open .fold-right::after,
+.cd-folding-panel.is-open .fold-left::after {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s 0s, background-color 0.5s 0s;
+  -moz-transition: -moz-transform 0.5s 0s, background-color 0.5s 0s;
+  transition: transform 0.5s 0s, background-color 0.5s 0s;
+}
+/* line 374, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel.is-open .fold-right::after {
+  background-color: white;
+}
+/* line 378, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-folding-panel.is-open .cd-close {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s 0.5s;
+  -moz-transition: opacity 0.2s 0.5s;
+  transition: opacity 0.2s 0.5s;
+}
+@media only screen and (min-width: 600px) {
+  /* line 264, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 264, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 800px;
+  }
+  /* line 392, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel .fold-left,
+  .cd-folding-panel .fold-right {
+    width: 50%;
+    float: left;
+    height: 100%;
+  }
+  /* line 398, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel .fold-right {
+    /* change perspective-origin so that the 2 fold sides have the same vanishing point */
+    -webkit-perspective-origin: 0% 50%;
+    -moz-perspective-origin: 0% 50%;
+    perspective-origin: 0% 50%;
+  }
+  /* line 402, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel .fold-right::after {
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transform: translateX(-100%) rotateY(-90deg);
+    -moz-transform: translateX(-100%) rotateY(-90deg);
+    -ms-transform: translateX(-100%) rotateY(-90deg);
+    -o-transform: translateX(-100%) rotateY(-90deg);
+    transform: translateX(-100%) rotateY(-90deg);
+  }
+  /* line 408, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel .fold-left {
+    display: block;
+    /* change perspective-origin so that the 2 fold sides have the same vanishing point */
+    -webkit-perspective-origin: 100% 50%;
+    -moz-perspective-origin: 100% 50%;
+    perspective-origin: 100% 50%;
+  }
+  /* line 413, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-folding-panel .fold-left::after {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: translateX(100%) rotateY(90deg);
+    -moz-transform: translateX(100%) rotateY(90deg);
+    -ms-transform: translateX(100%) rotateY(90deg);
+    -o-transform: translateX(100%) rotateY(90deg);
+    transform: translateX(100%) rotateY(90deg);
+  }
+}
+
+/* line 420, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.single-page {
+  padding: 20px;
+}
+
+/* line 423, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-fold-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 2em;
+  width: 100%;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.4s;
+  -moz-transition: visibility 0s 0.4s;
+  transition: visibility 0s 0.4s;
+}
+/* line 436, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-fold-content > * {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+}
+/* line 441, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-fold-content h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  -webkit-transition: -webkit-transform 0.2s 0.2s, opacity 0.2s 0.2s;
+  -moz-transition: -moz-transform 0.2s 0.2s, opacity 0.2s 0.2s;
+  transition: transform 0.2s 0.2s, opacity 0.2s 0.2s;
+}
+/* line 448, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-fold-content p, .cd-fold-content em {
+  line-height: 1.6;
+}
+/* line 452, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-fold-content em {
+  display: inline-block;
+  margin: 1em 0;
+  font-family: "Vollkorn", serif;
+  font-size: 1.8rem;
+  color: white;
+  -webkit-transition: -webkit-transform 0.2s 0.1s, opacity 0.2s 0.1s;
+  -moz-transition: -moz-transform 0.2s 0.1s, opacity 0.2s 0.1s;
+  transition: transform 0.2s 0.1s, opacity 0.2s 0.1s;
+}
+/* line 462, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.cd-fold-content p {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  -webkit-transition: -webkit-transform 0.2s 0s, opacity 0.2s 0s;
+  -moz-transition: -moz-transform 0.2s 0s, opacity 0.2s 0s;
+  transition: transform 0.2s 0s, opacity 0.2s 0s;
+}
+/* line 468, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.is-open .cd-fold-content {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  visibility: visible;
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s;
+}
+/* line 474, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.is-open .cd-fold-content > * {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 479, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.is-open .cd-fold-content h2 {
+  -webkit-transition: -webkit-transform 0.2s 0.5s, opacity 0.2s 0.5s;
+  -moz-transition: -moz-transform 0.2s 0.5s, opacity 0.2s 0.5s;
+  transition: transform 0.2s 0.5s, opacity 0.2s 0.5s;
+}
+/* line 483, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.is-open .cd-fold-content em {
+  -webkit-transition: -webkit-transform 0.2s 0.6s, opacity 0.2s 0.6s;
+  -moz-transition: -moz-transform 0.2s 0.6s, opacity 0.2s 0.6s;
+  transition: transform 0.2s 0.6s, opacity 0.2s 0.6s;
+}
+/* line 487, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.is-open .cd-fold-content p {
+  -webkit-transition: -webkit-transform 0.2s 0.7s, opacity 0.2s 0.7s;
+  -moz-transition: -moz-transform 0.2s 0.7s, opacity 0.2s 0.7s;
+  transition: transform 0.2s 0.7s, opacity 0.2s 0.7s;
+}
+@media only screen and (min-width: 600px) {
+  /* line 493, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-fold-content h2 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 423, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-fold-content {
+    padding: 4em;
+  }
+  /* line 501, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-fold-content > * {
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  /* line 505, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-fold-content em {
+    font-size: 2.2rem;
+  }
+  /* line 509, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+  .cd-fold-content p {
+    font-size: 1.6rem;
+  }
+}
+
+/* --------------------------------
+
+Javascript disabled
+
+-------------------------------- */
+/* line 521, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.no-js .cd-fold-content.single-page {
+  position: static;
+  visibility: visible;
+  height: auto;
+  background-color: #242424;
+}
+/* line 527, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/_blog.scss */
+.no-js .cd-fold-content.single-page > * {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-full {
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 10, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-half {
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 10, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-half {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 10, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-half {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 14, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-third {
+  background: cyan;
+  box-sizing: border-box;
+  width: 33.33333%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 14, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-third {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  /* line 19, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-third:nth-child(3n) {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 14, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-third {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-fourth {
+  box-sizing: border-box;
+  width: 25%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-fourth {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-fourth {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-fourth {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-sixth {
+  box-sizing: border-box;
+  width: 16.66667%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-sixth {
+    box-sizing: border-box;
+    width: 33.33333%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-sixth {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 29, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+  .col-sixth {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+/* line 36, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+}
+
+/* line 43, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-third {
+  background: papayawhip;
+}
+/* line 45, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-third:nth-child(2n) {
+  background: cyan;
+}
+
+/* line 47, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-sixth {
+  background: palegoldenrod;
+}
+/* line 49, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/layout/__index.sass */
+.col-sixth:nth-child(2n) {
+  background: lime;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body {
+  color: #242424;
+}
+/* line 3, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Avenir", "Helvetica", sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+/* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body .center {
+  text-align: center;
+}
+/* line 9, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body p {
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-weight: 100;
+  line-height: 28px;
+}
+/* line 13, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body img {
+  width: 100%;
+}
+/* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body pre {
+  padding: 25px;
+}
+/* line 20, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_generics.sass */
+body .hidden {
+  display: none;
+}
+
+/* line 1, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header {
+  position: relative;
+  background: white;
+}
+/* line 5, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  transform: translateY(-50%);
+}
+/* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "PT Mono", monospace;
+  font-size: 15px;
+}
+/* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul li a {
+  text-decoration: none;
+  color: #242424;
+  transition: all 0.3s;
+}
+/* line 22, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul li a:hover, .site-header__navigation ul li a:focus, .site-header__navigation ul li a:active {
+  color: #78D18B;
+}
+/* line 26, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul li:after {
+  content: "//";
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+/* line 30, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul li:last-of-type {
+  margin-right: 0;
+}
+/* line 32, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__navigation ul li:last-of-type:after {
+  content: "";
+}
+/* line 34, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__logo {
+  display: inline-block;
+}
+/* line 36, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header__logo img {
+  width: 90px;
+}
+
+/* line 39, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer {
+  background: #F9F9F9;
+}
+
+/* line 42, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.footer__info {
+  color: #242424;
+  padding: 20px;
+}
+/* line 45, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.footer__info p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 51, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header-secondary {
+  height: 100vh;
+}
+/* line 54, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header-secondary__navigation ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: fixed;
+  top: 150px;
+}
+/* line 60, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header-secondary__navigation ul li {
+  list-style: none;
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+/* line 66, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header-secondary__navigation ul li a {
+  text-decoration: none;
+  color: #242424;
+}
+/* line 69, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header-secondary__navigation ul li a:hover {
+  text-decoration: underline;
+}
+/* line 71, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+.site-header-secondary__logo {
+  width: 80px;
+  margin-top: 20px;
+  position: fixed;
+}
+
+/* line 76, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer {
+  font-family: "PT Mono", monospace;
+  background: #242424;
+  color: #F9F9F9;
+  font-weight: 100;
+  padding: 20px 0;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 84, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer .col-half p {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 84, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer .col-half p {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  /* line 84, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer .col-half p {
+    padding-left: 50px;
+  }
+}
+/* line 87, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer p {
+  margin-top: 0;
+}
+/* line 90, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 90, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul {
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 90, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul {
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+}
+/* line 97, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul li {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 97, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul li {
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  /* line 104, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul li span {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 97, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul li {
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  /* line 104, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul li span {
+    display: none;
+  }
+}
+/* line 106, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul li:last-of-type {
+  margin-bottom: 0;
+}
+/* line 108, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul li a {
+  color: #F9F9F9;
+}
+/* line 110, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul i {
+  width: 32px;
+  height: 32px;
+  background: #F9F9F9;
+  color: #242424;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 1em;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 110, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul i {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 110, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+  footer ul i {
+    margin-right: 0;
+  }
+}
+/* line 120, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul i:before {
+  line-height: 32px;
+  font-size: 18px;
+}
+/* line 123, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/modules/_menu.sass */
+footer ul i:hover {
+  background: #78D18B;
+}
+
+/* line 3, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+#home p, #portfolio p, #aboutUs p {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Avenir", "Helvetica", sans-serif;
+}
+/* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+#home h3, #portfolio h3, #aboutUs h3 {
+  font-size: 27px;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-family: "PT Mono", monospace;
+}
+/* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+#home h3.sub-title-01, #home h3.sub-title-02, #portfolio h3.sub-title-01, #portfolio h3.sub-title-02, #aboutUs h3.sub-title-01, #aboutUs h3.sub-title-02 {
+  font-family: "Avenir", "Helvetica", sans-serif;
+  line-height: 44px;
+}
+/* line 15, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+#home .attn, #portfolio .attn, #aboutUs .attn {
+  font-family: "PT Mono", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+  color: #78D18B;
+  width: 60%;
+}
+/* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+#home .contain, #portfolio .contain, #aboutUs .contain {
+  padding-left: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+  #home .contain, #portfolio .contain, #aboutUs .contain {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+  #home .contain, #portfolio .contain, #aboutUs .contain {
+    padding: 0;
+  }
+}
+/* line 27, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+#home .button, #portfolio .button, #aboutUs .button {
+  border: none;
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.1px;
+  padding: 10px 20px;
+  border-radius: 0;
+  background: #78D18B;
+  margin-top: 20px;
+  transition: all 0.3s;
+  margin-left: 50px;
+  display: inline-block;
+}
+/* line 13, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_button.sass */
+#home .button:hover, #home .button:focus, #home .button:active, #portfolio .button:hover, #portfolio .button:focus, #portfolio .button:active, #aboutUs .button:hover, #aboutUs .button:focus, #aboutUs .button:active {
+  background: #3aa952;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 27, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+  #home .button, #portfolio .button, #aboutUs .button {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 27, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+  #home .button, #portfolio .button, #aboutUs .button {
+    margin-left: 0;
+  }
+}
+
+/* line 34, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__header {
+  background: #F9F9F9;
+  color: #242424;
+}
+/* line 37, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__header h2 {
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+/* line 42, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__header h3 {
+  font-weight: 100;
+  color: #78D18B;
+  margin: 0;
+}
+/* line 46, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__content-block {
+  padding: 70px 0;
+}
+/* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__content {
+  padding: 100px 0;
+  background: #7C8975;
+}
+/* line 51, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__content h4 {
+  font-size: 20px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+  .home__content {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+  .home__content {
+    padding: 50px 0;
+  }
+}
+/* line 55, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.home__content a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 58, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work {
+  background: #242424;
+  padding: 100px 0 80px 0;
+  position: relative;
+  overflow: auto;
+}
+/* line 63, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work a {
+  display: block;
+  margin: 0 auto;
+  font-size: 27px;
+  font-weight: 300;
+  color: #78D18B;
+  font-family: "Avenir", "Helvetica", sans-serif;
+  letter-spacing: 1.2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 3;
+}
+/* line 74, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work a.title {
+  padding-top: 0;
+}
+/* line 76, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work h4 {
+  font-size: 20px;
+  font-family: "PT Mono", monospace;
+  font-weight: 100;
+  line-height: 28px;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  border-bottom: 1px solid white;
+  transition: all 0.3s;
+}
+/* line 86, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work h4:hover, .our-work h4:focus, .our-work h4:active {
+  color: #78D18B;
+  border-bottom: 1px solid #78D18B;
+}
+/* line 89, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work .hover {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 96, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.our-work .hover.active {
+  background: #242424;
+  z-index: 3;
+}
+
+/* line 100, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_home.sass */
+.footer {
+  background: #242424;
+  color: white;
+  padding: 20px;
+}
+
+/* line 4, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin h1 {
+  color: black;
+}
+/* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half {
+  padding: 40px;
+}
+/* line 9, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+1) {
+  background-color: #F9F9F9;
+}
+/* line 11, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+1) a {
+  color: #242424;
+}
+/* line 13, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+1) b {
+  border-color: #242424;
+}
+/* line 16, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+2) {
+  background-color: #7E7E7E;
+}
+/* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+2) a {
+  color: #242424;
+}
+/* line 20, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+2) b {
+  border-color: #242424;
+}
+/* line 23, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+3) {
+  background-color: #242424;
+}
+/* line 26, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+4) {
+  background-color: white;
+}
+/* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+4) a {
+  color: #242424;
+}
+/* line 30, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .col-half:nth-of-type(4n+4) b {
+  border-color: #242424;
+}
+/* line 32, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .button, #admin .button-warning {
+  border: none;
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.1px;
+  padding: 10px 20px;
+  border-radius: 0;
+  background: #78D18B;
+  margin-top: 20px;
+  transition: all 0.3s;
+  margin-left: 50px;
+}
+/* line 13, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_button.sass */
+#admin .button:hover, #admin .button:focus, #admin .button:active, #admin .button-warning:hover, #admin .button-warning:focus, #admin .button-warning:active {
+  background: #3aa952;
+}
+/* line 35, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .button a, #admin .button-warning a {
+  color: white;
+}
+/* line 37, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .button-warning {
+  background: red;
+}
+/* line 39, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+#admin .button-warning:hover {
+  background: #990000;
+}
+
+/* line 41, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_admin.sass */
+.radio label {
+  margin: 10px;
+}
+
+/* line 3, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile:first-of-type {
+  padding-right: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 3, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+  #aboutUs .profile:first-of-type {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 3, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+  #aboutUs .profile:first-of-type {
+    padding-right: 0;
+  }
+}
+/* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile:last-of-type {
+  padding-left: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+  #aboutUs .profile:last-of-type {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+  #aboutUs .profile:last-of-type {
+    padding-left: 0;
+  }
+}
+/* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+  #aboutUs .profile img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+  #aboutUs .profile img {
+    width: 70%;
+  }
+}
+/* line 17, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile h4 {
+  margin-top: 0;
+  font-weight: 300;
+}
+/* line 20, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile h4 ~ p {
+  margin-bottom: 60px;
+}
+/* line 22, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile a {
+  text-decoration: none;
+  color: #242424;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+/* line 27, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .profile a:hover, #aboutUs .profile a:focus, #aboutUs .profile a:active {
+  color: #78D18B;
+}
+/* line 30, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .quote {
+  background: #F9F9F9;
+}
+/* line 32, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_about.sass */
+#aboutUs .quote p {
+  color: #78D18B;
+  font-size: 28px;
+  line-height: 42px;
+  padding: 80px 0;
+  margin: 0;
+}
+
+/* line 3, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_form-page.sass */
+h1 {
+  color: black;
+}
+
+/* line 6, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_form-page.sass */
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid #7E7E7E;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+/* line 11, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_form-page.sass */
+form textarea {
+  height: 300px;
+}
+/* line 14, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_form-page.sass */
+form .col-half input, form .col-half textarea {
+  width: 80%;
+}
+/* line 17, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_form-page.sass */
+form .col-full input, form .col-full textarea {
+  width: 90%;
+}
+
+/* line 12, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.portfolio-header, .about-header {
+  padding: 100px 0;
+}
+/* line 15, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.portfolio-header h3, .about-header h3 {
+  font-size: 27px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+/* line 19, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.portfolio-header .attn, .about-header .attn {
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+  color: #7E7E7E;
+  width: 60%;
+}
+
+/* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece {
+  position: relative;
+  background-position: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 1170px) {
+  /* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece {
+    box-sizing: border-box;
+    width: 33.33333%;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece {
+    min-height: 470px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece {
+    min-height: 380px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece {
+    min-height: 320px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 300px;
+  }
+}
+/* line 44, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece .piece-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece .overlay {
+  display: none;
+  background: rgba(249, 249, 249, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  pointer-events: none;
+  color: #242424;
+}
+@media screen and (min-width: 1170px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece .overlay {
+    padding-top: 150px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece .overlay {
+    padding-top: 180px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece .overlay {
+    padding-top: 150px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece .overlay {
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 48, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+  .piece .overlay {
+    padding-top: 110px;
+  }
+}
+/* line 69, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece .overlay h4 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 74, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece .overlay h4:after {
+  content: "";
+  background: #78D18B;
+  max-width: 40px;
+  margin: 16px auto;
+  height: 2px;
+  display: block;
+}
+/* line 81, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece .overlay span {
+  font-family: "PT Mono", monospace;
+  color: #242424;
+  font-size: 12px;
+  display: block;
+}
+/* line 88, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work.sass */
+.piece .overlay .button {
+  border: none;
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.1px;
+  padding: 10px 20px;
+  border-radius: 0;
+  background: #78D18B;
+  margin-top: 20px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+/* line 13, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_button.sass */
+.piece .overlay .button:hover, .piece .overlay .button:focus, .piece .overlay .button:active {
+  background: #3aa952;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_blog.sass */
+.cd-main .cd-gallery {
+  padding: 0;
+  margin: 0;
+}
+/* line 5, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_blog.sass */
+.cd-main .cd-gallery li {
+  list-style: none;
+}
+
+/* line 7, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_blog.sass */
+.notice, .alert {
+  margin: 0;
+}
+
+/* line 9, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_blog.sass */
+#notice {
+  margin: 0;
+}
+
+/* line 2, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work p {
+  font-size: 14px;
+}
+/* line 4, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work h3 {
+  font-size: 27px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-family: "PT Mono", monospace;
+}
+/* line 9, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work .attn {
+  color: #242424;
+}
+/* line 11, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work .contain {
+  padding-left: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 11, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+  #single_work .contain {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 11, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+  #single_work .contain {
+    padding: 0;
+  }
+}
+/* line 15, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work .button, #single_work .button-warning {
+  border: none;
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.1px;
+  padding: 10px 20px;
+  border-radius: 0;
+  background: #78D18B;
+  margin-top: 20px;
+  transition: all 0.3s;
+  margin-left: 50px;
+}
+/* line 13, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/mixins/_button.sass */
+#single_work .button:hover, #single_work .button:focus, #single_work .button:active, #single_work .button-warning:hover, #single_work .button-warning:focus, #single_work .button-warning:active {
+  background: #3aa952;
+}
+/* line 18, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work .button a, #single_work .button-warning a {
+  color: white;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 15, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+  #single_work .button, #single_work .button-warning {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 15, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+  #single_work .button, #single_work .button-warning {
+    margin-left: 0;
+  }
+}
+/* line 22, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+#single_work .button-warning {
+  background: red;
+}
+
+/* line 25, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__header {
+  background: #6A7564;
+  color: white;
+}
+/* line 28, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__header h2.header__title {
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin: 0;
+}
+/* line 33, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__header .read-more {
+  background: white;
+  color: black;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* line 40, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__content-block {
+  padding: 70px 0;
+}
+/* line 42, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__content {
+  padding: 100px 0;
+  background: #7C8975;
+}
+/* line 45, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__content h4 {
+  font-size: 20px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 42, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+  .single_work__content {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 42, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+  .single_work__content {
+    padding: 50px 0;
+  }
+}
+/* line 49, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__content a {
+  text-decoration: none;
+  color: white;
+}
+/* line 53, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__image-container.col-half img {
+  width: 75%;
+  margin: 0 12.5%;
+  padding: 60px 0;
+}
+/* line 58, /Users/trudy/Code/upatfive-rails/app/assets/stylesheets/states/_work_single.sass */
+.single_work__image-container.col-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
