@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <% content_for :title, @blog_entry.title %>
-
+<% content_for :meta_description, @blog_entry.excerpt %>
 <div class="single-page container hidden" id="blog-entry">
   <h2><%= @blog_entry.title %></h2>
   <a href="http://www.upatfive.ca/blog/<%=@blog_entry.slug%>">Permalink</a>

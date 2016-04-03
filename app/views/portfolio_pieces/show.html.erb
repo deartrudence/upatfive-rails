@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <% content_for :title, @portfolio_piece.title %>
+<% content_for :meta_description, @portfolio_piece.excerpt %>
 <div id="single_work" class="hidden">
   <header class="single_work__header" style="background:url(<%= @portfolio_piece.feature_image.url %>); no-repeat; background-size: cover;">
     <div class="container">
