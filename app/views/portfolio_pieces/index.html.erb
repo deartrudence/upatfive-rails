@@ -1,5 +1,5 @@
 <div id="portfolio" class="hidden">
-    
+<% content_for :title, 'Up at Five Work' %>
     <p id="notice"><%= notice %></p>
     <div class="portfolio-header">
         <div class="container">
@@ -11,14 +11,14 @@
     	<% @portfolio_pieces.each do |portfolio_piece|%>
             <div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
     		<%= link_to portfolio_piece_path(portfolio_piece), {class: 'piece-link', data: {trigger: portfolio_piece.id}} do %>
-    	
+
     		<% end %>
     		  <div class="overlay overlay-<%= portfolio_piece.id%>">
     				<h4><%= portfolio_piece.title%></h4>
     				<span>View Project</span>
-    		  </div> 
+    		  </div>
             </div>
-    		
+
     	<% end %>
     </div>
     <%= render template: 'contact/contact'%>

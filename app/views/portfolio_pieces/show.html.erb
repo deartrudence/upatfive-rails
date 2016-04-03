@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<% content_for :title, @portfolio_piece.title %>
 <div id="single_work" class="hidden">
   <header class="single_work__header" style="background:url(<%= @portfolio_piece.feature_image.url %>); no-repeat; background-size: cover;">
     <div class="container">
@@ -31,7 +32,7 @@
       <% @portfolio_piece.portfolio_images.order(:order).each do |image|%>
         <div class="single_work__image-container <%= image.width %>" style="background-color: <%= image.color %>;">
           <img src="<%= image.pic.url %>">
-        </div>  
+        </div>
       <% end %>
     </div>
   </div>
@@ -45,7 +46,7 @@
         $('#single_work').fadeIn(1000);
     });
   function headerHeight(){
-    var height = $(window).height() - 127 
+    var height = $(window).height() - 127
     var padding = (height - 54)/2
     $('.header__title').css('padding', padding + 'px 0');
   };
@@ -61,6 +62,6 @@
       $("body").animate({
         scrollTop: $("#portfolio").offset().top
       }, 1000);
-      
+
   })
 </script>
