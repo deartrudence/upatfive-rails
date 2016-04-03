@@ -26,7 +26,7 @@
 	<div class="our-work">
 	<div class="hover active"></div>
 	<div class="hover off"></div>
-	<%= link_to 'Featured Work', portfolio_pieces_path, class: 'container title' %>
+	<%= link_to 'Featured Work', portfolio_path, class: 'container title' %>
 	<% @portfolio_pieces.each do |portfolio_piece| %>
         <%= link_to portfolio_piece_path(portfolio_piece), :data => {:featured => portfolio_piece.feature_image.url }, class: 'container featured' do %>
                 <h4><%= portfolio_piece.title %></h4>
