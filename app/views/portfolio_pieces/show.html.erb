@@ -22,7 +22,9 @@
         </div>
         <div class="col-half work__app">
           <p class="contain"><%= @portfolio_piece.description %></p>
-          <a href="<%= @portfolio_piece.link%>" class="button" target="_blank">View Live</a>
+          <% if @portfolio_piece.link.present?%>
+            <a href="<%= @portfolio_piece.link%>" class="button" target="_blank">View Live</a>
+          <% end %>
         </div>
       </div>
     </div>
