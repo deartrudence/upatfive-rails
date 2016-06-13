@@ -18,3 +18,4 @@
 
 #Ignore our .env file
 .env
+config/aws.yml
