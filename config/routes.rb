@@ -3,14 +3,16 @@ Rails.application.routes.draw do
   devise_for :users
   resources :portfolio_images
   resources :blog_entries
-  get 'blog/' => 'blog_entries#index'
-  get 'blog/:id' => 'blog_entries#show'
+  # get 'blog/' => 'blog_entries#index'
+  # get 'blog/:id' => 'blog_entries#show'
   resources :portfolio_pieces
   get 'portfolio/' => 'portfolio_pieces#index'
   get 'portfolio/:id/' => 'portfolio_pieces#show'
   get 'front_page/show'
 
+
   get 'about', to: 'front_page#about'
+  get 'blog', to: 'front_page#blog'
   root to: "front_page#show"
 
   get 'admin/panel'
