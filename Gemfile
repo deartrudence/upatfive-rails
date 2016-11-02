@@ -1,10 +1,8 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-
 
 
 #for Authentification
@@ -14,7 +12,7 @@ gem 'devise'
 gem 'friendly_id', '~> 5.1.0'
 
 #for image management
-gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+gem 'paperclip', "4.3.6"
 gem 'aws-sdk-v1'
 gem 'aws-s3'
 
