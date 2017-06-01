@@ -12,9 +12,9 @@ gem 'devise'
 gem 'friendly_id', '~> 5.1.0'
 
 #for image management
-gem 'paperclip', "4.3.6"
-gem 'aws-sdk-v1'
-gem 'aws-s3'
+gem 'paperclip'#, "4.3.6"
+gem 'aws-sdk'
+# gem 'aws-s3'
 
 #for sass
 gem 'bourbon'
