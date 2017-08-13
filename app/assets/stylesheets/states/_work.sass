@@ -88,6 +88,22 @@ $piece-height-xs: 300px
 		.button 
 			+button-style
 			:display inline-block
-
+.client-logos
+	:align-items center
+	:justify-content space-between
+	:padding-bottom 50px
+	.client-logo
+		:max-width 110px
+		:max-height 100px
+		:padding 15px
+		:filter grayscale(100%)
+		:transition all 0.5s 
+	.our-clients
+		:color #173EFB
+		:font-family $body-font
+		:font-weight 500
+	a:hover
+		.client-logo 
+			:filter grayscale(5%)
 
 			

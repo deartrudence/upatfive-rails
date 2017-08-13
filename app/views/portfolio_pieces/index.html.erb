@@ -8,6 +8,27 @@
         	<p class="attn">working with you to make the web.</p>
         </div>
     </div>
+    <div class="container row client-logos">
+      <!-- <h4 class="our-clients">our clients</h4> -->
+        <a href="http://www.wwf.ca/"  target="_blank">
+          <%= image_tag 'client_logos/wwf_logo.svg', class: 'client-logo' %>
+        </a>
+        <a href="http://www.msf.ca/" target="_blank">
+          <%= image_tag 'client_logos/msf_logo.svg', class: 'client-logo' %>
+        </a>
+        <a href="https://www.diageo.com/" target="_blank">
+          <%= image_tag 'client_logos/diageo_logo.svg', class: 'client-logo' %>
+        </a>
+        <a href="http://ladieslearningcode.ca/" target="_blank">
+          <%= image_tag 'client_logos/llc_logo.svg', class: 'client-logo' %>
+        </a>
+        <a href="http://www.northstarhub.com/" target="_blank">
+          <%= image_tag 'client_logos/northstar_logo.svg', class: 'client-logo', style: 'padding: 5px;' %>
+        </a>
+        <a href="https://www.td.com/" target="_blank">
+          <%= image_tag 'client_logos/td_bank_logo.svg', class: 'client-logo' %>
+        </a>
+    </div>
     <div class="row">
     	<% @portfolio_pieces.each do |portfolio_piece|%>
             <div class="piece" style= "background: url(<%= portfolio_piece.feature_image.url%>); background-size: cover; background-position: center">
